@@ -41,13 +41,7 @@ import LanguageIcon from '@/components/icons/home/LanguageIcon';
 import WorkingHours from '@/components/icons/home/WorkingHours';
 
 
-import healthy1 from '../../../public/assets/images/portfolio/healthy-food-1.png';
-import healthy2 from '../../../public/assets/images/portfolio/healthy-food-2.png';
-import healthy3 from '../../../public/assets/images/portfolio/healthy-food-3.png';
-import healthy4 from '../../../public/assets/images/portfolio/healthy-food-4.png';
-import healthy5 from '../../../public/assets/images/portfolio/healthy-food-5.png';
-import healthy6 from '../../../public/assets/images/portfolio/healthy-food-6.png';
-import healthy7 from '../../../public/assets/images/portfolio/healthy-food-7.png';
+
 
 
 export const aboutMe = {
@@ -55,7 +49,7 @@ export const aboutMe = {
 	aboutImageDark: aboutImageDark?.src,
 	name: 'Ha GONIN',
 	designation: 'DÉVÉLOPPEUSE FULL-STACK',
-	desc1: `<span style="font-size: 4rem; color:red">J</span>e suis une passionnée de tech, avec une première expérience dans le développement web à 17 ans. En 2017, j’ai commencé à explorer la programmation, mais c’est en 2021 que je me suis vraiment plongée dans le code à travers des formations plus approfondies. Cette évolution a confirmé ma passion pour le développement et la technologie.
+	desc1: `<span style="color:#d79d4b">J</span>e suis une passionnée de tech, avec une première expérience dans le développement web à 17 ans. En 2017, j’ai commencé à explorer la programmation, mais c’est en 2021 que je me suis vraiment plongée dans le code à travers des formations plus approfondies. Cette évolution a confirmé ma passion pour le développement et la technologie.
 `,
 	desc2: `Mon expérience en tant que conseillère en voyage, notamment avec Amadeus, m'a permis de renforcer mes compétences en résolution de problèmes, organisation et travail en équipe. J’ai appris à coder de manière rigoureuse, en me concentrant sur l'efficacité et l'expérience utilisateur.`,
 	desc3: `Aujourd'hui, je suis prête à apporter mes compétences et mon enthousiasme pour relever de nouveaux défis dans le développement logiciel, avec une approche alliant technique et relationnel.
@@ -314,12 +308,3 @@ export const contactInfo = [
 	},
 ];
 
-export const projets = [
-	healthy1,
-	healthy2,
-	healthy3,
-	healthy4,
-	healthy5,
-	healthy6,
-	healthy7,
-];

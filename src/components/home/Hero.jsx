@@ -20,7 +20,7 @@ const Hero = () => {
 							<Typewriter
 								options={{
 									strings: [
-										'Full-stack Développeuse ',
+										'Développeuse Full-stack ',
 										'Web Développement et Mobile',
 									],
 									autoStart: true,
