@@ -13,7 +13,7 @@ const FunFactItem = ({ Svg, startCount, endCount, title }) => {
 
   return (
     <div className="column">
-      <div className="funfacts-item">
+      <div className="funfacts-item h-100">
         <div className="icon">{Svg}</div>
         <CountUp start={startCount} end={endCount} duration={5} redraw={true}>
           {({ countUpRef, start }) => (

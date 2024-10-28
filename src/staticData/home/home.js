@@ -39,6 +39,7 @@ import aboutImageDark from '../../../public/assets/images/hero/hero-img2-l.webp'
 import UX from '@/components/icons/home/UX';
 import LanguageIcon from '@/components/icons/home/LanguageIcon';
 import WorkingHours from '@/components/icons/home/WorkingHours';
+import EducationIcon from '@/components/icons/home/EducationIcon';
 
 
 
@@ -126,10 +127,10 @@ export const funItems = [
 	},
 	{
 		id: 2,
-		Svg: <UX />,
-		startCount: 1,
-		endCount: 15,
-		title: 'EXPÉRIENCE UTILISATEUR',
+		Svg: <EducationIcon />,
+		startCount: 0,
+		endCount: 3,
+		title: "DIPLÔMÉ D'ÉTUDES SUPÉRIEURS OBTENUES",
 	},
 	{
 		id: 3,
@@ -143,7 +144,7 @@ export const funItems = [
 		Svg: <HackathonIcon />,
 		startCount: 1,
 		endCount: 1,
-		title: 'HACKATHON',
+		title: 'PRIX DU HACKATHON POUR LA MEILLEURE UX/UI',
 	},
 ];
 

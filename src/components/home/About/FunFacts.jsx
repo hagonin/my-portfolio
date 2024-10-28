@@ -3,7 +3,7 @@ import FunFactItem from "./FunFactItem";
 
 const FunFacts = () => {
   return (
-    <div className="funfacts">
+    <div className="funfacts h-100">
       {funItems?.map((item) => (
         <FunFactItem key={item?.id} {...item} />
       ))}

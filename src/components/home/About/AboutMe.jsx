@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-		<div className="about" data-title="À PROPOS" id="about">
+		<div className="about h-100" data-title="À PROPOS" id="about">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
@@ -13,7 +13,7 @@ const AboutMe = () => {
 				</div>
 				<div className="row align-items-end">
 					<div className="col-lg-6">
-						<div className="about-thumbnail-area">
+						<div className="about-thumbnail-area pb-4 pe-4 ps-0 mx-auto">
 							<Image
 								src={aboutMe?.aboutImageDark}
 								className="about-thumb dark img-fluid"

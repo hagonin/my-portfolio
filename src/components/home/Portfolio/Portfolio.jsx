@@ -33,9 +33,11 @@ const Portfolio = () => {
 	return (
 		<div className="portfolio" data-title="Portfolio" id="portfolio">
 			<div className="container">
-				<h2 className="title">
-					<span>Portfolio</span>
-				</h2>
+				<div className="section-title">
+					<h2 className="title">
+						<span>Portfolio</span>
+					</h2>
+				</div>
 				<div className="portfolio-wrapper">
 					<ul className="filter-button">
 						{menuLists.map((item) => (

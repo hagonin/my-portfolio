@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const PortfolioItem = ({ portfolio, onClick }) => (
 	<motion.div
-		className="col-6 col-md-4 portfolio-item"
+		className="col-12 col-md-4 portfolio-item"
 		style={{ transformOrigin: 'left bottom' }}
 		layout
 		initial={{ opacity: 0, rotate: -20 }}

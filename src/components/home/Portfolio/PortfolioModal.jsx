@@ -16,12 +16,9 @@ const PortfolioModal = ({
 	);
 
 	return (
-		<CustomModal
-			isOpen={isOpen}
-			onRequestClose={onRequestClose}
-		>
+		<CustomModal isOpen={isOpen} onRequestClose={onRequestClose}>
 			{selectedImage && containsImageExtension && (
-				<div className="h-100 w-75 mx-auto position-relative">
+				<div className="h-100 p-4 overflow-auto">
 					<div className="row bg-white p-4">
 						<div className="col-md-6 col-12">
 							<h4>Name: {selectedPortfolio.name}</h4>
@@ -62,7 +59,7 @@ const PortfolioModal = ({
 			)}
 
 			{selectedImage && !containsImageExtension && (
-				<div className="h-100 p-4">
+				<div className="h-100 p-4 overflow-auto">
 					<div className="row">
 						<div className="col-md-6 col-12">
 							<h4>Name: {selectedPortfolio.name}</h4>
