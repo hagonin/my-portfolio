@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import Input from '../../ui/fields/Input';
 import Textarea from '../../ui/fields/Textarea';
 import { contactInfo } from '@/staticData/home/home';
@@ -12,6 +13,8 @@ const Contact = () => {
 		subject: '',
 		message: '',
 	});
+
+	const [sending, setSending] = useState(false);
 
 	const { fullName, email, subject, message } = formValues;
 
@@ -30,9 +33,31 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('formValues', formValues);
+		setSending(true);
+		emailjs
+			.send(
+				process.env.NEXT_PUBLIC_SERVICE_ID,
+				process.env.NEXT_PUBLIC_TEMPLATE_ID,
+				{
+					from_name: formValues.email,
+					to_name: formValues.fullName,
+					message: formValues.message,
+				},
+				process.env.NEXT_PUBLIC_PUBLIC_KEY
+			)
+			.then(
+				(result) => {
+					console.log('Success!', result.text);
+					reset();
+				},
+				(error) => {
+					console.log('Failed...', error);
+				}
+			)
+			.finally(() => {
+				setSending(false);
+			});
 
-		// reset after form submit
 		reset();
 	};
 
@@ -113,7 +138,15 @@ const Contact = () => {
 										className="theme-btn border-0"
 										onClick={handleCustomSubmit}
 									>
-										ENVOYER <BsArrowRight className="ms-2" size={25} />
+										ENVOYER
+										{sending ? (
+											<div
+												className="spinner-border text-light me-2"
+												role="status"
+											></div>
+										) : (
+											<BsArrowRight className="ms-2" size={25} />
+										)}
 									</button>
 								</div>
 							</form>
