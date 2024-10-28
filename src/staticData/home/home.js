@@ -34,7 +34,7 @@ import skill18Image from '../../../public/assets/images/skills/css3.svg';
 import skill19Image from '../../../public/assets/images/skills/photoshop.svg';
 import skill20Image from '../../../public/assets/images/skills/bootstrap.svg';
 
-import aboutImage from '../../../public/assets/images/hero/hero-img2.webp';
+import aboutImage from '../../../public/assets/images/hero/portfolio_03.png';
 import aboutImageDark from '../../../public/assets/images/hero/hero-img2-l.webp';
 import UX from '@/components/icons/home/UX';
 import LanguageIcon from '@/components/icons/home/LanguageIcon';

@@ -11,6 +11,11 @@ import healthy6 from '../../../public/assets/images/portfolio/healthy-food-6.png
 import healthy7 from '../../../public/assets/images/portfolio/healthy-food-7.png';
 
 
+import {
+	FaImage,
+	FaImages,
+} from 'react-icons/fa';
+
 
 export const projets = [
 	healthy1,
@@ -45,7 +50,8 @@ export const portfoliosData = [
 		id: 3,
 		types: ['front_end'],
 		list_images: projets,
-		image: book1?.src,
+		video: healthy2?.src,
+		image: healthy1?.src,
 		IconType: <FaImages size={35} />,
 		name: 'E-commerce',
 	},

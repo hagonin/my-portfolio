@@ -1,4 +1,4 @@
-import CustomModal from '../shared/CustomModal';
+import CustomModal from '@/components/shared/CustomModal';
 import Image from 'next/image';
 
 const PortfolioModal = ({
@@ -7,23 +7,39 @@ const PortfolioModal = ({
 	selectedImage,
 	selectedPortfolio,
 }) => {
-	// Define the image extensions for Type A rendering
+	// Define the image extensions 
 	const imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp', 'tiff'];
 
-	// Determine if selected image is in the list of Type A image extensions
-	const isTypeAImage = imageExtensions.some((ext) =>
+	// Determine if selected image is in the list of image extensions
+	const containsImageExtension = imageExtensions.some((ext) =>
 		selectedImage?.endsWith(`.${ext}`)
 	);
 
 	return (
-		<CustomModal isOpen={isOpen} onRequestClose={onRequestClose}>
-			{selectedImage && isTypeAImage && (
-				// Render for Type A images
+		<CustomModal
+			isOpen={isOpen}
+			onRequestClose={onRequestClose}
+		>
+			{selectedImage && containsImageExtension && (
 				<div className="h-100 w-75 mx-auto position-relative">
 					<div className="row bg-white p-4">
 						<div className="col-md-6 col-12">
 							<h4>Name: {selectedPortfolio.name}</h4>
-							<p>Description of the project...</p>
+							<p>Description of the project...DemDeDee</p>
+							<ul>
+								<li>
+									<p>Lorem ipsum dolor</p>
+								</li>
+								<li>
+									<p>Lorem ipsum dolor</p>
+								</li>
+								<li>
+									<p>Lorem ipsum dolor</p>
+								</li>
+								<li>
+									<p>Lorem ipsum dolor</p>
+								</li>
+							</ul>
 						</div>
 						<div className="col-md-6 col-12">
 							<Image
@@ -31,26 +47,30 @@ const PortfolioModal = ({
 								alt="Portfolio Modal Image"
 								width={390}
 								height={200}
-								className="img-fluid"
+								className="img-fluid object-fit-contain"
 							/>
 						</div>
 					</div>
-					<button className="mfp-close" onClick={onRequestClose}>
+					<button
+						className="mfp-close"
+						onClick={onRequestClose}
+						style={{ position: 'absolute' }}
+					>
 						&times;
 					</button>
 				</div>
 			)}
 
-			{selectedImage && !isTypeAImage && (
-				// Render for Type B (non-image) content, such as videos
+			{selectedImage && !containsImageExtension && (
 				<div className="h-100 p-4">
 					<div className="row">
 						<div className="col-md-6 col-12">
 							<h4>Name: {selectedPortfolio.name}</h4>
-							<p>Description of the project...</p>
+							<p>Description of the project..Test.</p>
 						</div>
 						<div className="col-md-6 col-12">
 							<iframe
+								style={{ position: 'relative' }}
 								title="Portfolio Video"
 								src={selectedImage}
 								width="100%"
@@ -59,7 +79,11 @@ const PortfolioModal = ({
 							></iframe>
 						</div>
 					</div>
-					<button className="mfp-close" onClick={onRequestClose}>
+					<button
+						className="mfp-close"
+						onClick={onRequestClose}
+						style={{ position: 'absolute' }}
+					>
 						&times;
 					</button>
 				</div>

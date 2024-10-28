@@ -38,7 +38,7 @@ body {
   font-display: swap;
 }
 body.dark {
-  background-color: #18191a;
+  background-color: transparent;
 }
 
 a, a:focus {

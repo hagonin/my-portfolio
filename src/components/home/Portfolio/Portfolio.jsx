@@ -5,8 +5,8 @@ import { AnimatePresence } from 'framer-motion';
 import PortfolioItem from './PortfolioItem';
 import PortfolioModal from './PortfolioModal';
 import FilterButton from './PortfolioFilterMenu';
-import Button from '../ui/Button';
 import { portfoliosData, menuLists } from '@/staticData/home/portfolioData';
+import Button from '@/components/ui/Button';
 
 const Portfolio = () => {
 	const isMobile = useMediaQuery('(max-width: 592px)');

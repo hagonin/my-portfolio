@@ -4,7 +4,7 @@ import { socialMediaLists } from "@/staticData/home/home";
 import Typewriter from "typewriter-effect";
 import { downloadPdf } from "@/utils/downloadPdf";
 import Image from "next/image";
-import lightImage from "../../../public/assets/images/hero/hero-img-wv.webp";
+import lightImage from "../../../public/assets/images/hero/portfolio_04.png";
 import darkImage from "../../../public/assets/images/hero/hero-img.webp";
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
 							<Image
 								src={darkImage?.src}
 								className="dark img-fluid"
-								alt="Ramsay"
+								alt="moi-même"
 								height={700}
 								width={790}
 								priority
@@ -47,7 +47,7 @@ const Hero = () => {
 							<Image
 								src={lightImage?.src}
 								className="light img-fluid"
-								alt="Ramsay"
+								alt="moi-même"
 								height={700}
 								width={790}
 								priority

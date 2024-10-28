@@ -1,9 +1,9 @@
 import Hero from '@/components/home/Hero';
-import AboutMe from '@/components/home/AboutMe/AboutMe';
+import AboutMe from '@/components/home/About/AboutMe';
 import Skills from '@/components/home/Skills';
 import Resume from '@/components/home/Resume';
 import Portfolio from '@/components/home/Portfolio/Portfolio';
-// import ContactMe from '@/components/home/ContactMe';
+import Contact from '@/components/home/Contact/Contact';
 import Layout from '@/layout/Layout';
 
 export default function Home() {
@@ -11,9 +11,10 @@ export default function Home() {
 		<Layout>
 			<Hero />
 			<AboutMe />
-			<Skills/>
-			<Resume/>
-			<Portfolio/>
+			<Skills />
+			<Resume />
+			<Portfolio />
+			<Contact />
 		</Layout>
 	);
 }
