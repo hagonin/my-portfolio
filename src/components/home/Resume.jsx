@@ -14,7 +14,7 @@ function ExperienceCol({ range, title, description }) {
 
 const Resume = () => {
 	return (
-		<div className="resume" data-title="PARCOURS" id="resume">
+		<div className="resume" data-title="Resume" id="resume">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">

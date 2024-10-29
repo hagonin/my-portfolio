@@ -6,7 +6,7 @@ import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import heroImage from "../../../public/assets/images/hero/hero-img-xs.webp";
+import heroImage from "../../../public/assets/images/hero/avatar-2.png";
 
 const HeaderDrawer = ({ isOpen, toggleDrawer }) => {
   const isMobile = useMediaQuery("(max-width: 1199px)");
@@ -57,7 +57,7 @@ const HeaderDrawer = ({ isOpen, toggleDrawer }) => {
 						<div className="hero-img">
 							<Image
 								src={heroImage?.src}
-								className="img-fluid w-100"
+								className="img-fluid w-100 rounded-5"
 								width={75}
 								height={75}
 								alt="Ha GONIN - Full-stack Développeuse"

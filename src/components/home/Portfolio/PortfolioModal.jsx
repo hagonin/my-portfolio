@@ -22,9 +22,19 @@ const PortfolioModal = ({
 					<div className="row bg-white p-4">
 						<div className="col-md-6 col-12">
 							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
+							<ul>
+								{selectedPortfolio.tech &&
+									selectedPortfolio.tech.map((item, id) => (
+										<li className="list-inline-item" key={id}>
+											<span className="btn-link-rounded rounded-5">{item}</span>
+										</li>
+									))}
+							</ul>
 							<p>
-								<span className="fw-bold">Description</span>:{' '}
-								{selectedPortfolio.description}
+								<span className="fw-bold" style={{ textAlign: 'justify' }}>
+									Description
+								</span>
+								: {selectedPortfolio.description}
 							</p>
 							<ul className="">
 								{selectedPortfolio.feat &&
@@ -56,16 +66,23 @@ const PortfolioModal = ({
 			)}
 
 			{selectedImage && !containsImageExtension && (
-				<div
-					className="h-100 p-4 overflow-auto m-3 "
-					style={{ textAlign: 'justify' }}
-				>
+				<div className="h-100 p-4 overflow-auto m-3 ">
 					<div className="row">
 						<div className="col-md-6 col-12">
 							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
+							<ul>
+								{selectedPortfolio.tech &&
+									selectedPortfolio.tech.map((item, id) => (
+										<li className="list-inline-item" key={id}>
+											<span className="btn-link-rounded rounded-5">{item}</span>
+										</li>
+									))}
+							</ul>
 							<p>
-								<span className="fw-bold">Description</span>:{' '}
-								{selectedPortfolio.description}
+								<span className="fw-bold" style={{ textAlign: 'justify' }}>
+									Description
+								</span>
+								: {selectedPortfolio.description}
 							</p>
 							<ul className="">
 								{selectedPortfolio.feat &&

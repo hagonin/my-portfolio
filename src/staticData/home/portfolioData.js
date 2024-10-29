@@ -35,6 +35,15 @@ export const portfoliosData = [
 		tags: 'Blogs',
 		IconType: <FaImage size={35} />,
 		name: 'Home Cook App',
+		tech: [
+			'Python',
+			'Django',
+			'React',
+			'Nextjs',
+			'TailwindCSS',
+			'HTML5',
+			'PostgreSQL',
+		],
 		description: 'Une application web pour les recettes',
 		feat: [
 			'Création, stockage et recherche de recettes par catégorie et ingrédients',
@@ -50,6 +59,14 @@ export const portfoliosData = [
 		tags: 'E-commerce',
 		IconType: <FaImage size={35} />,
 		name: 'Freshmeals website',
+		tech: [
+			'React',
+			'React-router',
+			'Redux',
+			'Firebase Cloud Firestore',
+			'TailwindCSS',
+			'HTML5',
+		],
 		description:
 			'Un site e-commerce responsive permettant aux utilisateurs de parcourir des produits biologiques, sélectionner des articles à acheter, les ajouter au panier, créer un compte et se connecter.',
 		feat: [
@@ -66,8 +83,9 @@ export const portfoliosData = [
 		image: healthy1?.src,
 		IconType: <FaImages size={35} />,
 		name: 'Healthy Food website',
+		tech: ['HTML5', 'Bootstrap', 'SASS/SCSS'],
 		description:
-			"Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement. L'objectif est de pratiquer et renforcer les compétences en HTML et CSS (Sass)",
+			"Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement.",
 		feat: [
 			'Ce projet vise à apprendre à structurer un site de manière professionnelle en utilisant Sass',
 			'Galerie d’images : Présentation des images en grille avec des styles CSS pour l’alignement et les marges.',

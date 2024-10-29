@@ -15,13 +15,6 @@ const AboutMe = () => {
 					<div className="col-lg-6 m-auto">
 						<div className="about-thumbnail-area pb-4 pe-4 ps-0 mx-auto">
 							<Image
-								src={aboutMe?.aboutImageDark}
-								className="about-thumb dark img-fluid"
-								width={325}
-								height={380}
-								alt="Ha GONIN - portfolio"
-							/>
-							<Image
 								src={aboutMe?.aboutImage}
 								className="about-thumb light img-fluid"
 								width={325}
