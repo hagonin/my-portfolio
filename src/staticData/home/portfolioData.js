@@ -1,6 +1,5 @@
 import homecook1 from '../../../public/assets/images/portfolio/homecook-1.png';
 import freshmeal1 from '../../../public/assets/images/portfolio/freshmeals-1.png';
-import book1 from '../../../public/assets/images/portfolio/healthy-food-1.png';
 
 import healthy1 from '../../../public/assets/images/portfolio/healthy-food-1.png';
 import healthy2 from '../../../public/assets/images/portfolio/healthy-food-2.png';
@@ -31,20 +30,33 @@ export const portfoliosData = [
 	{
 		id: 1,
 		types: ['full_stack'],
-		video: 'https://player.vimeo.com/video/312334044',
+		video: 'https://www.youtube.com/embed/15NvtxEiVOs?si=tpqCTK-69-AdkT0Y',
 		image: homecook1?.src,
-		tags: 'Inspiration / Book',
+		tags: 'Blogs',
 		IconType: <FaImage size={35} />,
-		name: 'Home Cook',
+		name: 'Home Cook App',
+		description: 'Une application web pour les recettes',
+		feat: [
+			'Création, stockage et recherche de recettes par catégorie et ingrédients',
+			"Ajout de l'authentification des utilisateurs pour la connexion, la déconnexion, la gestion des mots de passe et la gestion des recettes",
+			"Conception d'une interface entièrement responsive avec TailwindCSS",
+		],
 	},
 	{
 		id: 2,
 		types: ['front_end'],
-		video: 'https://www.youtube.com/embed/9No-FiEInLA',
+		video: 'https://www.youtube.com/embed/KTp0V3KcX2w?si=6pL3gDQtvIh6Yo5j',
 		image: freshmeal1?.src,
-		tags: 'Healthy Food',
+		tags: 'E-commerce',
 		IconType: <FaImage size={35} />,
-		name: 'Freshmeals',
+		name: 'Freshmeals website',
+		description:
+			'Un site e-commerce responsive permettant aux utilisateurs de parcourir des produits biologiques, sélectionner des articles à acheter, les ajouter au panier, créer un compte et se connecter.',
+		feat: [
+			'Interface intuitive : Navigation fluide avec menus organisés pour une recherche facile.',
+			'Filtrage avancé : Affinage des recherches par catégorie, prix ou popularité.',
+			'Panier interactif : Calcul du total en temps réel avec options de paiement simples.',
+		],
 	},
 	{
 		id: 3,
@@ -53,7 +65,14 @@ export const portfoliosData = [
 		video: healthy2?.src,
 		image: healthy1?.src,
 		IconType: <FaImages size={35} />,
-		name: 'E-commerce',
+		name: 'Healthy Food website',
+		description:
+			"Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement. L'objectif est de pratiquer et renforcer les compétences en HTML et CSS (Sass)",
+		feat: [
+			'Ce projet vise à apprendre à structurer un site de manière professionnelle en utilisant Sass',
+			'Galerie d’images : Présentation des images en grille avec des styles CSS pour l’alignement et les marges.',
+			'Effets de survol : Effets visuels au survol des boutons et liens pour rendre l’interaction agréable.',
+		],
 	},
 ];
 

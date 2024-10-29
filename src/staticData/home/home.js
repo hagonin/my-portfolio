@@ -48,8 +48,7 @@ export const aboutMe = {
 	desc: [
 		'Je suis une développeuse web passionnée par la tech, avec un sens de l’esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.',
 		"Après mes premiers pas dans le développement web à 17 ans et l’exploration des bases de la programmation en 2017, c’est en 2021 que j'ai plongé sérieusement dans le code à travers des formations intensives et approfondies. Cette évolution a confirmé ma passion et mon intérêt professionnel pour une carrière dans le développement et la programmation.",
-		"Aujourd'hui, je suis prête à apporter mes compétences et mon enthousiasme pour relever de nouveaux défis dans le développement logiciel, avec une approche alliant technique et relationnel.",
-		'Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs, en respectant le cahier des charges et les objectifs commerciaux à chaque étape du processus de développement.',
+		'Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs à chaque étape du processus de développement. Je porte une attention particulière à l’utilisation d’un code propre ainsi qu’à la création d’une interface captivante et soignée.',
 		'Je peux m’appuyer sur la diversité de mes expériences professionnelles, notamment sur la plateforme Amadeus mais aussi la coordination de projet, qui a renforcé mes compétences en résolution de problèmes, en organisation et en travail d’équipe.',
 		'Je suis ouverte et motivée pour collaborer et participer à des projets innovants et percutants dans le secteur des nouvelles technologies.',
 	],

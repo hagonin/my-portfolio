@@ -7,13 +7,13 @@ const PortfolioModal = ({
 	selectedImage,
 	selectedPortfolio,
 }) => {
-	// Define the image extensions 
+	// Define the image extensions
 	const imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp', 'tiff'];
-
 	// Determine if selected image is in the list of image extensions
 	const containsImageExtension = imageExtensions.some((ext) =>
 		selectedImage?.endsWith(`.${ext}`)
 	);
+	console.log('Setting selectedImage:', selectedPortfolio);
 
 	return (
 		<CustomModal isOpen={isOpen} onRequestClose={onRequestClose}>
@@ -21,21 +21,18 @@ const PortfolioModal = ({
 				<div className="h-100 p-4 overflow-auto">
 					<div className="row bg-white p-4">
 						<div className="col-md-6 col-12">
-							<h4>Name: {selectedPortfolio.name}</h4>
-							<p>Description of the project...DemDeDee</p>
-							<ul>
-								<li>
-									<p>Lorem ipsum dolor</p>
-								</li>
-								<li>
-									<p>Lorem ipsum dolor</p>
-								</li>
-								<li>
-									<p>Lorem ipsum dolor</p>
-								</li>
-								<li>
-									<p>Lorem ipsum dolor</p>
-								</li>
+							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
+							<p>
+								<span className="fw-bold">Description</span>:{' '}
+								{selectedPortfolio.description}
+							</p>
+							<ul className="">
+								{selectedPortfolio.feat &&
+									selectedPortfolio.feat.map((feature, index) => (
+										<li key={index} className="py-1 mt-2">
+											- {feature}
+										</li>
+									))}
 							</ul>
 						</div>
 						<div className="col-md-6 col-12">
@@ -59,11 +56,25 @@ const PortfolioModal = ({
 			)}
 
 			{selectedImage && !containsImageExtension && (
-				<div className="h-100 p-4 overflow-auto">
+				<div
+					className="h-100 p-4 overflow-auto m-3 "
+					style={{ textAlign: 'justify' }}
+				>
 					<div className="row">
 						<div className="col-md-6 col-12">
-							<h4>Name: {selectedPortfolio.name}</h4>
-							<p>Description of the project..Test.</p>
+							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
+							<p>
+								<span className="fw-bold">Description</span>:{' '}
+								{selectedPortfolio.description}
+							</p>
+							<ul className="">
+								{selectedPortfolio.feat &&
+									selectedPortfolio.feat.map((feature, index) => (
+										<li key={index} className="py-1 mt-2">
+											- {feature}
+										</li>
+									))}
+							</ul>
 						</div>
 						<div className="col-md-6 col-12">
 							<iframe
