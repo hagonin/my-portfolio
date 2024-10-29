@@ -1,9 +1,9 @@
-import { aboutMe } from "@/staticData/home/home";
-import FunFacts from "./FunFacts";
-import Image from "next/image";
+import { aboutMe } from '@/staticData/home/home';
+import FunFacts from './FunFacts';
+import Image from 'next/image';
 
 const AboutMe = () => {
-  return (
+	return (
 		<div className="about h-100" data-title="À PROPOS" id="about">
 			<div className="container">
 				<div className="section-title">
@@ -12,7 +12,7 @@ const AboutMe = () => {
 					</h2>
 				</div>
 				<div className="row align-items-end">
-					<div className="col-lg-6">
+					<div className="col-lg-6 m-auto">
 						<div className="about-thumbnail-area pb-4 pe-4 ps-0 mx-auto">
 							<Image
 								src={aboutMe?.aboutImageDark}
@@ -26,7 +26,7 @@ const AboutMe = () => {
 								className="about-thumb light img-fluid"
 								width={325}
 								height={380}
-								alt="Ramsay - Personal Portfolio"
+								alt="Ha Gonin - my portfolio"
 							/>
 						</div>
 					</div>
@@ -36,11 +36,17 @@ const AboutMe = () => {
 							<h4 className="designation">
 								{aboutMe?.designation} <span className="line"></span>
 							</h4>
-							<div className="bio"
-								dangerouslySetInnerHTML={{ __html: aboutMe?.desc1 }}
-							/>
-							<p className="bio">{aboutMe?.desc2}</p>
-							<p className="bio">{aboutMe?.desc3}</p>
+							<div className="bio">
+								{aboutMe.desc.map((text, index) => (
+									<p
+										key={index}
+										className="mb-3"
+										style={{ textAlign: 'justify' }}
+									>
+										{text}
+									</p>
+								))}
+							</div>
 							<ul className="info">
 								{aboutMe?.aboutInfo?.map((item, i) => (
 									<li key={i}>

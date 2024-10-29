@@ -11,7 +11,6 @@ import LocationIcon from '@/components/icons/home/LocationIcon';
 import WebsiteIcon from '@/components/icons/home/WebsiteIcon';
 import HackathonIcon from '@/components/icons/home/HackathonIcon';
 
-
 //Compétences images
 import skill1Image from '../../../public/assets/images/skills/python.svg';
 import skill2Image from '../../../public/assets/images/skills/react.svg';
@@ -41,21 +40,19 @@ import LanguageIcon from '@/components/icons/home/LanguageIcon';
 import WorkingHours from '@/components/icons/home/WorkingHours';
 import EducationIcon from '@/components/icons/home/EducationIcon';
 
-
-
-
-
 export const aboutMe = {
 	aboutImage: aboutImage?.src,
 	aboutImageDark: aboutImageDark?.src,
 	name: 'Ha GONIN',
 	designation: 'DÉVÉLOPPEUSE FULL-STACK',
-	desc1: `<span style="color:#d79d4b">J</span>e suis une passionnée de tech, avec une première expérience dans le développement web à 17 ans. En 2017, j’ai commencé à explorer la programmation, mais c’est en 2021 que je me suis vraiment plongée dans le code à travers des formations plus approfondies. Cette évolution a confirmé ma passion pour le développement et la technologie.
-`,
-	desc2: `Mon expérience en tant que conseillère en voyage, notamment avec Amadeus, m'a permis de renforcer mes compétences en résolution de problèmes, organisation et travail en équipe. J’ai appris à coder de manière rigoureuse, en me concentrant sur l'efficacité et l'expérience utilisateur.`,
-	desc3: `Aujourd'hui, je suis prête à apporter mes compétences et mon enthousiasme pour relever de nouveaux défis dans le développement logiciel, avec une approche alliant technique et relationnel.
-
-`,
+	desc: [
+		'Je suis une développeuse web passionnée par la tech, avec un sens de l’esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.',
+		"Après mes premiers pas dans le développement web à 17 ans et l’exploration des bases de la programmation en 2017, c’est en 2021 que j'ai plongé sérieusement dans le code à travers des formations intensives et approfondies. Cette évolution a confirmé ma passion et mon intérêt professionnel pour une carrière dans le développement et la programmation.",
+		"Aujourd'hui, je suis prête à apporter mes compétences et mon enthousiasme pour relever de nouveaux défis dans le développement logiciel, avec une approche alliant technique et relationnel.",
+		'Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs, en respectant le cahier des charges et les objectifs commerciaux à chaque étape du processus de développement.',
+		'Je peux m’appuyer sur la diversité de mes expériences professionnelles, notamment sur la plateforme Amadeus mais aussi la coordination de projet, qui a renforcé mes compétences en résolution de problèmes, en organisation et en travail d’équipe.',
+		'Je suis ouverte et motivée pour collaborer et participer à des projets innovants et percutants dans le secteur des nouvelles technologies.',
+	],
 
 	aboutInfo: [
 		{
@@ -286,7 +283,7 @@ export const contactInfo = [
 		id: 1,
 		Icon: <PhoneNumber />,
 		title: 'NUMÉRO TÉLÉPHONE',
-		data1: '06 72 17 92 99',
+		data1: '+33 6 72 17 92 99',
 	},
 	{
 		id: 2,
@@ -308,4 +305,3 @@ export const contactInfo = [
 		data1: 'www.goninha.com',
 	},
 ];
-

@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa';
 
 
-export const projets = [
+export const projects = [
 	healthy1,
 	healthy2,
 	healthy3,
@@ -49,7 +49,7 @@ export const portfoliosData = [
 	{
 		id: 3,
 		types: ['front_end'],
-		list_images: projets,
+		list_images: projects,
 		video: healthy2?.src,
 		image: healthy1?.src,
 		IconType: <FaImages size={35} />,
