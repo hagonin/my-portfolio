@@ -62,7 +62,7 @@ export const aboutMe = {
 		},
 		{
 			id: 2,
-			title: '06 72 17 92 99',
+			title: '+33 6 72 17 92 99',
 			Icon: (
 				<PhoneNumber
 					viewBox="0 0 32 31"
@@ -301,6 +301,6 @@ export const contactInfo = [
 		id: 4,
 		Icon: <WebsiteIcon />,
 		title: 'WEBSITE',
-		data1: 'www.goninha.com',
+		data1: 'https://hagonin.vercel.app/',
 	},
 ];

@@ -9,12 +9,7 @@ import healthy5 from '../../../public/assets/images/portfolio/healthy-food-5.png
 import healthy6 from '../../../public/assets/images/portfolio/healthy-food-6.png';
 import healthy7 from '../../../public/assets/images/portfolio/healthy-food-7.png';
 
-
-import {
-	FaImage,
-	FaImages,
-} from 'react-icons/fa';
-
+import { FaImage, FaImages } from 'react-icons/fa';
 
 export const projects = [
 	healthy1,
@@ -43,13 +38,12 @@ export const portfoliosData = [
 			'TailwindCSS',
 			'HTML5',
 			'PostgreSQL',
+			'Responsive',
 		],
-		description: 'Une application web pour les recettes',
-		feat: [
-			'Création, stockage et recherche de recettes par catégorie et ingrédients',
-			"Ajout de l'authentification des utilisateurs pour la connexion, la déconnexion, la gestion des mots de passe et la gestion des recettes",
-			"Conception d'une interface entièrement responsive avec TailwindCSS",
-		],
+		description:
+			'Une application web de gestion de recettes permettant la création, le stockage et la recherche par catégorie et ingrédients, avec authentification des utilisateurs pour la gestion des comptes et des recettes.',
+		url1: 'https://github.com/hagonin/Recipe-Django-NextJs',
+		url2: 'https://homecook-iota.vercel.app/',
 	},
 	{
 		id: 2,
@@ -63,17 +57,15 @@ export const portfoliosData = [
 			'React',
 			'React-router',
 			'Redux',
-			'Firebase Cloud Firestore',
 			'TailwindCSS',
 			'HTML5',
+			'Responsive',
+			'Firebase',
 		],
 		description:
 			'Un site e-commerce responsive permettant aux utilisateurs de parcourir des produits biologiques, sélectionner des articles à acheter, les ajouter au panier, créer un compte et se connecter.',
-		feat: [
-			'Interface intuitive : Navigation fluide avec menus organisés pour une recherche facile.',
-			'Filtrage avancé : Affinage des recherches par catégorie, prix ou popularité.',
-			'Panier interactif : Calcul du total en temps réel avec options de paiement simples.',
-		],
+		url1: 'https://github.com/fenewbie/freshmeals-app-reactjs',
+		url2: 'https://freshmeals-reactjs.web.app/',
 	},
 	{
 		id: 3,
@@ -86,11 +78,8 @@ export const portfoliosData = [
 		tech: ['HTML5', 'Bootstrap', 'SASS/SCSS'],
 		description:
 			"Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement.",
-		feat: [
-			'Ce projet vise à apprendre à structurer un site de manière professionnelle en utilisant Sass',
-			'Galerie d’images : Présentation des images en grille avec des styles CSS pour l’alignement et les marges.',
-			'Effets de survol : Effets visuels au survol des boutons et liens pour rendre l’interaction agréable.',
-		],
+		url1: 'https://github.com/hagonin/Healthy-food',
+		url2: '',
 	},
 ];
 

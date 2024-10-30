@@ -21,7 +21,7 @@ const CustomModal = ({
       backgroundColor: containsImageExtension ? "transparent" : "white",
       // padding: '20px',
       borderRadius: "3px",
-      maxWidth: containsImageExtension ? "80%" : "80%",
+      maxWidth: containsImageExtension ? "100%" : "100%",
       // maxHeight: '80%',
       height: "auto",
       width:

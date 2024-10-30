@@ -1,4 +1,5 @@
 import CustomModal from '@/components/shared/CustomModal';
+import SecondaryButton from '@/components/ui/SecondaryButton';
 import Image from 'next/image';
 
 const PortfolioModal = ({
@@ -36,14 +37,16 @@ const PortfolioModal = ({
 								</span>
 								: {selectedPortfolio.description}
 							</p>
-							<ul className="">
-								{selectedPortfolio.feat &&
-									selectedPortfolio.feat.map((feature, index) => (
-										<li key={index} className="py-1 mt-2">
-											- {feature}
-										</li>
-									))}
-							</ul>
+							<div className="mt-4">
+								<span className="mx-auto">
+									<SecondaryButton text="Github" url={selectedPortfolio.url1} />
+								</span>
+								<span className="me-5">
+									{selectedPortfolio.url2 && (
+										<SecondaryButton text="Live" url={selectedPortfolio.url2} />
+									)}
+								</span>
+							</div>
 						</div>
 						<div className="col-md-6 col-12">
 							<Image
@@ -79,19 +82,19 @@ const PortfolioModal = ({
 									))}
 							</ul>
 							<p>
-								<span className="fw-bold" style={{ textAlign: 'justify' }}>
-									Description
-								</span>
-								: {selectedPortfolio.description}
+								<span className="fw-bold fs-5">Description</span>:{' '}
+								{selectedPortfolio.description}
 							</p>
-							<ul className="">
-								{selectedPortfolio.feat &&
-									selectedPortfolio.feat.map((feature, index) => (
-										<li key={index} className="py-1 mt-2">
-											- {feature}
-										</li>
-									))}
-							</ul>
+							<div className="mt-4">
+								<span className="">
+									<SecondaryButton text="Github" url={selectedPortfolio.url1} />
+								</span>
+								<span className="me-xl-5 my-sm-3">
+									{selectedPortfolio.url2 && (
+										<SecondaryButton text="Live" url={selectedPortfolio.url2} />
+									)}
+								</span>
+							</div>
 						</div>
 						<div className="col-md-6 col-12">
 							<iframe
