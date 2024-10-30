@@ -23,13 +23,14 @@ const CustomModal = ({
       borderRadius: "3px",
       maxWidth: containsImageExtension ? "100%" : "100%",
       // maxHeight: '80%',
-      height: "auto",
+      height: "62%",
       width:
         (containsImageExtension || (isMobile && !containsImageExtension)) ?
-        "100%" : "70",
+        "80%" : "70%",
       overflow: "hidden",
       border: "none",
       padding: 0,
+      //width: "70%",
     },
     overlay: {
       position: "fixed",

@@ -2176,7 +2176,7 @@ body.dark .ui-datepicker-calendar .ui-state-active {
   background: rgba(0, 0, 0, 0.85) !important;
 }
 .ReactModal__Overlay .ReactModal__Content {
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 .ReactModal__Overlay .ReactModal__Content .mfp-close {
   background-color: #000000;

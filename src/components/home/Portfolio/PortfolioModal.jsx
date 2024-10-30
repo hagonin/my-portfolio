@@ -20,8 +20,8 @@ const PortfolioModal = ({
 		<CustomModal isOpen={isOpen} onRequestClose={onRequestClose}>
 			{selectedImage && containsImageExtension && (
 				<div className="h-100 p-4 overflow-auto">
-					<div className="row bg-white p-4">
-						<div className="col-md-6 col-12">
+					<div className="row bg-white p-4 g-4">
+						<div className="col-lg-6 col-12">
 							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
 							<ul>
 								{selectedPortfolio.tech &&
@@ -48,7 +48,7 @@ const PortfolioModal = ({
 								</span>
 							</div>
 						</div>
-						<div className="col-md-6 col-12">
+						<div className="col-lg-6 col-12">
 							<Image
 								src={selectedImage}
 								alt="Portfolio Modal Image"
@@ -70,8 +70,8 @@ const PortfolioModal = ({
 
 			{selectedImage && !containsImageExtension && (
 				<div className="h-100 p-4 overflow-auto m-3 ">
-					<div className="row">
-						<div className="col-md-6 col-12">
+					<div className="row g-4">
+						<div className="col-lg-6 col-12">
 							<h4 className="mb-3 fw-bolder">{selectedPortfolio.name}</h4>
 							<ul>
 								{selectedPortfolio.tech &&
@@ -96,7 +96,7 @@ const PortfolioModal = ({
 								</span>
 							</div>
 						</div>
-						<div className="col-md-6 col-12">
+						<div className="col-lg-6 col-12">
 							<iframe
 								style={{ position: 'relative' }}
 								title="Portfolio Video"
