@@ -41,7 +41,7 @@ export const portfoliosData = [
 			'Responsive',
 		],
 		description:
-			'Une application web de gestion de recettes permettant la création, le stockage et la recherche par catégorie et ingrédients, avec authentification des utilisateurs pour la gestion des comptes et des recettes.',
+			'Une application web de gestion de recettes permettant la création, le stockage et la recherche par catégories et ingrédients, avec authentification des utilisateurs pour la gestion des comptes et des recettes.',
 		url1: 'https://github.com/hagonin/Recipe-Django-NextJs',
 		url2: 'https://homecook-iota.vercel.app/',
 	},

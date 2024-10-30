@@ -1,10 +1,4 @@
-import SiteWebIcon from '@/components/icons/siteIcons/SiteWebIcon';
-import WebDevIcon from '@/components/icons/home/WebDevIcon';
-import SeoServices from '@/components/icons/home/SeoServices';
-import MediaMarketingIcon from '@/components/icons/home/MediaMarketingIcon';
-import GraphicsIcon from '@/components/icons/home/GraphicsIcon';
-import ContentWriting from '@/components/icons/home/ContentWriting';
-import WebDesignIcon from '@/components/icons/home/WebDesignIcon';
+
 import PhoneNumber from '@/components/icons/home/PhoneNumber';
 import EmailIcon from '@/components/icons/home/EmailIcon';
 import LocationIcon from '@/components/icons/home/LocationIcon';
@@ -35,7 +29,6 @@ import skill20Image from '../../../public/assets/images/skills/bootstrap.svg';
 
 import aboutImage from '../../../public/assets/images/hero/portfolio_03.png';
 import aboutImageDark from '../../../public/assets/images/hero/hero-img2-l.webp';
-import UX from '@/components/icons/home/UX';
 import LanguageIcon from '@/components/icons/home/LanguageIcon';
 import WorkingHours from '@/components/icons/home/WorkingHours';
 import EducationIcon from '@/components/icons/home/EducationIcon';
@@ -86,7 +79,7 @@ export const aboutMe = {
 		},
 		{
 			id: 1,
-			title: 'www.hagonin.com',
+			title: 'hagonin.vercel.app',
 			Icon: (
 				<WebsiteIcon
 					viewBox="0 0 33 32"
@@ -94,7 +87,7 @@ export const aboutMe = {
 					xmlns="http://www.w3.org/2000/svg"
 				/>
 			),
-			link: '',
+			link: 'https://hagonin.vercel.app/',
 		},
 	],
 	btnText: 'TÉLÉCHARGER CV',
@@ -126,7 +119,7 @@ export const funItems = [
 		Svg: <EducationIcon />,
 		startCount: 0,
 		endCount: 3,
-		title: "DIPLÔMÉ D'ÉTUDES SUPÉRIEURS OBTENUES",
+		title: "DIPLÔME D'ÉTUDES SUPÉRIEURS OBTENUES",
 	},
 	{
 		id: 3,
@@ -251,14 +244,14 @@ export const expFirstCol = [
 	{
 		id: 1,
 		range: '2021 - 2023',
-		title: 'DÉVELOPPEUR FRONT-END',
+		title: 'DÉVELOPPEUSE FRONT-END',
 		description:
 			'Développer la partie front-end d’une application web ou web mobile sécurisée',
 	},
 	{
 		id: 2,
 		range: '2021 - 2022',
-		title: 'DJANGO, DÉVELOPPEMENT WEB AVEC PYTHON',
+		title: 'PYTHON ET DÉVELOPPEMENT WEB AVEC DJANGO',
 		description: 'Développer des applications web sécurisées avec Django',
 	},
 	{
@@ -301,6 +294,6 @@ export const contactInfo = [
 		id: 4,
 		Icon: <WebsiteIcon />,
 		title: 'WEBSITE',
-		data1: 'https://hagonin.vercel.app/',
+		data1: 'hagonin.vercel.app',
 	},
 ];

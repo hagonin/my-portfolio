@@ -43,7 +43,7 @@ const PortfolioModal = ({
 								</span>
 								<span className="me-5">
 									{selectedPortfolio.url2 && (
-										<SecondaryButton text="Live" url={selectedPortfolio.url2} />
+										<SecondaryButton text="Vers le site" url={selectedPortfolio.url2} />
 									)}
 								</span>
 							</div>
@@ -91,7 +91,7 @@ const PortfolioModal = ({
 								</span>
 								<span className="me-xl-5 my-sm-3">
 									{selectedPortfolio.url2 && (
-										<SecondaryButton text="Live" url={selectedPortfolio.url2} />
+										<SecondaryButton text="Vers le site" url={selectedPortfolio.url2} />
 									)}
 								</span>
 							</div>

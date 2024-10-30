@@ -26,7 +26,7 @@ export const siteSettings = {
 		},
 		{
 			id: 3,
-			title: 'RESUME',
+			title: 'PARCOURS',
 			selector: '#resume',
 			url: '/resume',
 			Icon: <ResumeIcon />,

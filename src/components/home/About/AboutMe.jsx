@@ -34,7 +34,6 @@ const AboutMe = () => {
 									<p
 										key={index}
 										className="mb-3"
-										style={{ textAlign: 'justify' }}
 									>
 										{text}
 									</p>
