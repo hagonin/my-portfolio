@@ -277,23 +277,23 @@ export const expSecondCol = [
 		range: 'Mar 2023 - Jun 2023',
 		title: 'Market Research Analyst - Volunteering',
 		desc: [
-			"Conducting market research",
-			'Analyzing data and creating reports',
-			"UI/UX Design, Logo",
-		]
+			'Mener des recherches de marché pour identifier les tendances et les besoins des consommateurs',
+			'Analyser les données et produire des rapports pour guider les décisions stratégiques',
+			"Concevoir des interfaces utilisateur intuitives (UI/UX Design) et créer des logos alginés avec l'identité visuelle de la marque",
+		],
 	},
 	{
 		id: 2,
 		range: '2016 - 2020',
 		title: 'Conseillère en voyages',
 		desc: [
-			"Recherche des destinations, prix, coutumes et avis pour les clients",
+			'Recherche des destinations, prix, coutumes et avis pour les clients',
 			'Augmentation de la satisfaction client en résolvant les problèmes et en proposant des services de voyage sur mesure',
-			"Organisation complète des voyages, y compris les billets, l’hébergement et le transport",
-			'Négociation de devis et itinéraires personnalisés, contribuant à la croissance des ventes'
-		]
+			'Organisation complète des voyages, y compris les billets, l’hébergement et le transport',
+			'Négociation de devis et itinéraires personnalisés, contribuant à la croissance des ventes',
+		],
 	},
-]
+];
 
 export const contactInfo = [
 	{
