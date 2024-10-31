@@ -45,37 +45,19 @@ const Resume = () => {
 							</div>
 							<div className="timeline order-lg-first">
 								<div className="timeline-divider"></div>
-								<div className="timeline-item">
-									<div className="years-range">2016 - 2020</div>
-									<h3 className="title">CONSEILÈRE EN VOYAGE</h3>
-									<ul style={{ listStyleType: 'disc', marginTop: '15px' }}>
-										<li style={{ marginBottom: '10px' }}>
-											<p>
-												Recherche des destinations, prix, coutumes et avis pour
-												les clients
-											</p>
-										</li>
-										<li style={{ marginBottom: '10px' }}>
-											<p>
-												Augmentation de la satisfaction client en résolvant les
-												problèmes et en proposant des services de voyage sur
-												mesure
-											</p>
-										</li>
-										<li style={{ marginBottom: '10px' }}>
-											<p>
-												Organisation complète des voyages, y compris les
-												billets, l’hébergement et le transport
-											</p>
-										</li>
-										<li>
-											<p>
-												Négociation de devis et itinéraires personnalisés,
-												contribuant à la croissance des ventes
-											</p>
-										</li>
-									</ul>
-								</div>
+								{expSecondCol?.map((exp, id) => (
+									<div className="timeline-item" key={exp.id}>
+										<div className="years-range">{exp.range}</div>
+										<h3 className="title text-uppercase">{exp.title}</h3>
+										{exp.desc?.map((line, id) => (
+											<ul style={{ listStyleType: 'disc', marginTop: '15px' }}>
+												<li key={id}>
+													<p>{line}</p>
+												</li>
+											</ul>
+										))}
+									</div>
+								))}
 							</div>
 						</div>
 					</div>

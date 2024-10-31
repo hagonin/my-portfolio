@@ -246,29 +246,54 @@ export const expFirstCol = [
 		range: '2021 - 2023',
 		title: 'DÉVELOPPEUSE FRONT-END',
 		description:
-			'Développer la partie front-end d’une application web ou web mobile sécurisée',
+			'Maîtriser HTML, CSS, JavaScript, les algorithmes fondamentaux, et React pour créer des interfaces web dynamiques, responsives et optimisées ',
 	},
 	{
 		id: 2,
 		range: '2021 - 2022',
 		title: 'PYTHON ET DÉVELOPPEMENT WEB AVEC DJANGO',
-		description: 'Développer des applications web sécurisées avec Django',
+		description:
+			"Maîtriser les bases de Python, le développement web avec Django, la gestion des bases de données SQL, la création d'interfaces dynamiques et le déploiement d’applications sécurisées ",
 	},
 	{
 		id: 3,
 		range: '2014 - 2016',
 		title: 'MANAGEMENT DES SERVICES DU TOURISME SPORTIF ',
 		description:
-			'Former en gestion, développement et promotion des activités sportives au sein des territoires et organisations',
+			'Développer des compétences en gestion et promotion du tourisme sportif, apprendre à organiser des événements sportifs, et maîtriser les stratégies de communication pour valoriser les services liés au sport et au tourisme',
 	},
 	{
 		id: 4,
 		range: '2009 - 2013',
 		title: 'LICENCE TRADUCTION ET INTERPRETATION EN ANGLAIS',
 		description:
-			"Former en traduction et interprétation avec une maîtrise avancée de l'anglais",
+			'Acquérir les compétences pour traduire, interpréter et adapter le contenu à divers contextes culturels et professionnels.',
 	},
 ];
+
+export const expSecondCol = [
+	{
+		id: 1,
+		range: 'Mar 2023 - Jun 2023',
+		title: 'Market Research Analyst - Volunteering',
+		desc: [
+			"Conducting market research",
+			'Analyzing data and creating reports',
+			"UI/UX Design, Logo",
+		]
+	},
+	{
+		id: 2,
+		range: '2016 - 2020',
+		title: 'Conseillère en voyages',
+		desc: [
+			"Recherche des destinations, prix, coutumes et avis pour les clients",
+			'Augmentation de la satisfaction client en résolvant les problèmes et en proposant des services de voyage sur mesure',
+			"Organisation complète des voyages, y compris les billets, l’hébergement et le transport",
+			'Négociation de devis et itinéraires personnalisés, contribuant à la croissance des ventes'
+		]
+	},
+]
 
 export const contactInfo = [
 	{
