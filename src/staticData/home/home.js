@@ -26,6 +26,7 @@ import skill17Image from '../../../public/assets/images/skills/html5.svg';
 import skill18Image from '../../../public/assets/images/skills/css3.svg';
 import skill19Image from '../../../public/assets/images/skills/photoshop.svg';
 import skill20Image from '../../../public/assets/images/skills/bootstrap.svg';
+import skill21Image from '../../../public/assets/images/skills/leaftlet.png';
 
 import aboutImage from '../../../public/assets/images/hero/portfolio_03.png';
 import aboutImageDark from '../../../public/assets/images/hero/hero-img2-l.webp';
@@ -237,6 +238,11 @@ export const SkillsImages = [
 		id: 20,
 		url: '#',
 		image: skill20Image?.src,
+	},
+	{
+		id: 21,
+		url: '#',
+		image: skill21Image?.src,
 	},
 ];
 
