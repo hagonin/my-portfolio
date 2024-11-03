@@ -848,7 +848,7 @@ body.dark .btn-style2:hover {
 }
 @media (min-width: 768px) {
   .btn-link-rounded {
-    font-size: 16px;
+    font-size: 13px;
     /* padding: 14px 20px; */
   }
 }
