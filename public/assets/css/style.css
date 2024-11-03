@@ -841,7 +841,7 @@ body.dark .btn-style2:hover {
 }
 @media (min-width: 410px) {
   .btn-link-rounded {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-size: 13px;
     font-weight: 500;
   }
@@ -849,7 +849,7 @@ body.dark .btn-style2:hover {
 @media (min-width: 768px) {
   .btn-link-rounded {
     font-size: 16px;
-    padding: 14px 20px;
+    /* padding: 14px 20px; */
   }
 }
 .btn-link-rounded:hover {

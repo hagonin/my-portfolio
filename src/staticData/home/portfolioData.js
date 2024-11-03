@@ -29,7 +29,7 @@ export const portfoliosData = [
 		image: homecook1?.src,
 		tags: 'Blogs',
 		IconType: <FaImage size={35} />,
-		name: 'Home Cook App',
+		name: 'HomeCook App',
 		tech: [
 			'Python',
 			'Django',

@@ -32,7 +32,7 @@ const PortfolioModal = ({
 									))}
 							</ul>
 							<p>
-								<span className="fw-bold" style={{ textAlign: 'justify' }}>
+								<span className="fw-bold">
 									Description
 								</span>
 								: {selectedPortfolio.description}
@@ -82,7 +82,7 @@ const PortfolioModal = ({
 									))}
 							</ul>
 							<p>
-								<span className="fw-bold fs-5">Description</span>:{' '}
+								<span className="fw-bold fs-6">Description</span>:{' '}
 								{selectedPortfolio.description}
 							</p>
 							<div className="mt-4">
