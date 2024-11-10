@@ -39,7 +39,7 @@ const PortfolioModal = ({
 							</p>
 							<div className="mt-4">
 								<span className="mx-auto">
-									<SecondaryButton text="Github" url={selectedPortfolio.url1} />
+									<SecondaryButton text="Code source" url={selectedPortfolio.url1} />
 								</span>
 								<span className="me-5">
 									{selectedPortfolio.url2 && (
@@ -87,7 +87,7 @@ const PortfolioModal = ({
 							</p>
 							<div className="mt-4">
 								<span className="">
-									<SecondaryButton text="Github" url={selectedPortfolio.url1} />
+									<SecondaryButton text="Code source" url={selectedPortfolio.url1} />
 								</span>
 								<span className="me-xl-5 my-sm-3">
 									{selectedPortfolio.url2 && (

@@ -1,7 +1,7 @@
 import homecook1 from '../../../public/assets/images/portfolio/homecook-1.png';
-import freshmeal1 from '../../../public/assets/images/portfolio/freshmeals-1.png';
+import freshmeal1 from '../../../public/assets/images/portfolio/freshmeals-1.webp';
 
-import healthy1 from '../../../public/assets/images/portfolio/healthy-food-1.png';
+import healthy1 from '../../../public/assets/images/portfolio/healthy-food-1.webp';
 import healthy2 from '../../../public/assets/images/portfolio/healthy-food-2.png';
 import healthy3 from '../../../public/assets/images/portfolio/healthy-food-3.png';
 import healthy4 from '../../../public/assets/images/portfolio/healthy-food-4.png';
