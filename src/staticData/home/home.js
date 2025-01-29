@@ -243,14 +243,14 @@ export const SkillsImages = [
 export const expFirstCol = [
 	{
 		id: 1,
-		range: '2021 - 2023',
-		title: 'DÉVELOPPEUSE FRONT-END',
+		range: 'Janvier 2022 - Octobre 2022',
+		title: 'DÉVELOPPEUSE FRONT-END - BAC+2',
 		description:
 			'Maîtriser HTML, CSS, JavaScript, les algorithmes fondamentaux, et React pour créer des interfaces web dynamiques, responsives et optimisées ',
 	},
 	{
 		id: 2,
-		range: '2021 - 2022',
+		range: 'Octobre 2021 - Décembre 2021',
 		title: 'PYTHON ET DÉVELOPPEMENT WEB AVEC DJANGO',
 		description:
 			"Maîtriser les bases de Python, le développement web avec Django, la gestion des bases de données SQL, la création d'interfaces dynamiques et le déploiement d’applications sécurisées ",
@@ -258,14 +258,14 @@ export const expFirstCol = [
 	{
 		id: 3,
 		range: '2014 - 2016',
-		title: 'MANAGEMENT DES SERVICES DU TOURISME SPORTIF ',
+		title: 'MANAGEMENT DES SERVICES DU TOURISME SPORTIF - BAC+5 ',
 		description:
 			'Développer des compétences en gestion et promotion du tourisme sportif, apprendre à organiser des événements sportifs, et maîtriser les stratégies de communication pour valoriser les services liés au sport et au tourisme',
 	},
 	{
 		id: 4,
 		range: '2009 - 2013',
-		title: 'LICENCE TRADUCTION ET INTERPRETATION EN ANGLAIS',
+		title: 'LICENCE TRADUCTION ET INTERPRETATION EN ANGLAIS - BAC+3',
 		description:
 			'Acquérir les compétences pour traduire, interpréter et adapter le contenu à divers contextes culturels et professionnels.',
 	},
