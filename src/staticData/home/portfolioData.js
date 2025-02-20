@@ -79,7 +79,7 @@ export const portfoliosData = [
 		description:
 			"Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement.",
 		url1: 'https://github.com/hagonin/Healthy-food',
-		url2: '',
+		url2: 'https://healthy-food-38.netlify.app/',
 	},
 ];
 
