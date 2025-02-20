@@ -32,18 +32,22 @@ const PortfolioModal = ({
 									))}
 							</ul>
 							<p>
-								<span className="fw-bold">
-									Description
-								</span>
-								: {selectedPortfolio.description}
+								<span className="fw-bold">Description</span>:{' '}
+								{selectedPortfolio.description}
 							</p>
 							<div className="mt-4">
 								<span className="mx-auto">
-									<SecondaryButton text="Code source" url={selectedPortfolio.url1} />
+									<SecondaryButton
+										text="Code source"
+										url={selectedPortfolio.url1}
+									/>
 								</span>
-								<span className="me-5">
+								<span className="me-xl-5 my-sm-3">
 									{selectedPortfolio.url2 && (
-										<SecondaryButton text="Vers le site" url={selectedPortfolio.url2} />
+										<SecondaryButton
+											text="Vers le site"
+											url={selectedPortfolio.url2}
+										/>
 									)}
 								</span>
 							</div>
@@ -87,11 +91,17 @@ const PortfolioModal = ({
 							</p>
 							<div className="mt-4">
 								<span className="">
-									<SecondaryButton text="Code source" url={selectedPortfolio.url1} />
+									<SecondaryButton
+										text="Code source"
+										url={selectedPortfolio.url1}
+									/>
 								</span>
 								<span className="me-xl-5 my-sm-3">
 									{selectedPortfolio.url2 && (
-										<SecondaryButton text="Vers le site" url={selectedPortfolio.url2} />
+										<SecondaryButton
+											text="Vers le site"
+											url={selectedPortfolio.url2}
+										/>
 									)}
 								</span>
 							</div>
