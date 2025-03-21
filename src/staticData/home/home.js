@@ -244,7 +244,7 @@ export const expFirstCol = [
 	{
 		id: 1,
 		range: 'Janvier 2022 - Octobre 2022',
-		title: 'DÉVELOPPEUSE FRONT-END - BAC+2',
+		title: 'DÉVELOPPEUSE FRONT-END BOOTCAMP- Equiv BAC+2',
 		description:
 			'Maîtriser HTML, CSS, JavaScript, les algorithmes fondamentaux, et React pour créer des interfaces web dynamiques, responsives et optimisées ',
 	},
@@ -258,7 +258,7 @@ export const expFirstCol = [
 	{
 		id: 3,
 		range: '2014 - 2016',
-		title: 'MANAGEMENT DES SERVICES DU TOURISME SPORTIF - BAC+5 ',
+		title: 'MASTER MANAGEMENT DES SERVICES DU TOURISME SPORTIF - BAC+5 ',
 		description:
 			'Développer des compétences en gestion et promotion du tourisme sportif, apprendre à organiser des événements sportifs, et maîtriser les stratégies de communication pour valoriser les services liés au sport et au tourisme',
 	},
