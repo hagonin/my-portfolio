@@ -14,7 +14,7 @@ const Hero = () => {
 					<div className="content-inner">
 						<h2 className="hero-subtitle">Bonjour</h2>
 						<h1 className="hero-title">
-							Je suis <span className="bottom-border">Ha</span>
+							Je suis <span className="bottom-border">Sarah</span>
 						</h1>
 						<div className="typewritter">
 							<Typewriter
@@ -22,6 +22,7 @@ const Hero = () => {
 									strings: [
 										'Développeuse Full-stack ',
 										'Web Développement et Mobile',
+										"Concepteuse et Développeuses d'Applications",
 									],
 									autoStart: true,
 									loop: true,

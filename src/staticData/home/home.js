@@ -36,7 +36,7 @@ import EducationIcon from '@/components/icons/home/EducationIcon';
 export const aboutMe = {
 	aboutImage: aboutImage?.src,
 	aboutImageDark: aboutImageDark?.src,
-	name: 'Ha GONIN',
+	name: 'Sarah GONIN',
 	designation: 'DÉVÉLOPPEUSE FULL-STACK',
 	desc: [
 		'Je suis une développeuse web passionnée par la tech, avec un sens de l’esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.',
@@ -243,27 +243,34 @@ export const SkillsImages = [
 export const expFirstCol = [
 	{
 		id: 1,
+		range: 'June 2025 - Mars 2026',
+		title: "CONCEPTEUSE DÉVELOPPEUSE D'APPLICATIONS - Equiv BAC+4",
+		description:
+			'Maîtrise du développement d’applications web et mobiles en Java, JavaScript, Angular et Spring. Conception d’architectures logicielles robustes, analyse des besoins et modélisation UML. Gestion de bases de données SQL et NoSQL, déploiement, tests unitaires et rédaction de documentation technique. Application des méthodes Agile et DevOps, veille sécurité et utilisation d’outils collaboratifs comme Git. ',
+	},
+	{
+		id: 2,
 		range: 'Janvier 2022 - Octobre 2022',
-		title: 'DÉVELOPPEUSE FRONT-END BOOTCAMP- Equiv BAC+2',
+		title: 'DÉVELOPPEUSE FRONT-END BOOTCAMP - Equiv BAC+2',
 		description:
 			'Maîtriser HTML, CSS, JavaScript, les algorithmes fondamentaux, et React pour créer des interfaces web dynamiques, responsives et optimisées ',
 	},
 	{
-		id: 2,
+		id: 3,
 		range: 'Octobre 2021 - Décembre 2021',
 		title: 'PYTHON ET DÉVELOPPEMENT WEB AVEC DJANGO',
 		description:
 			"Maîtriser les bases de Python, le développement web avec Django, la gestion des bases de données SQL, la création d'interfaces dynamiques et le déploiement d’applications sécurisées ",
 	},
 	{
-		id: 3,
+		id: 4,
 		range: '2014 - 2016',
 		title: 'MASTER MANAGEMENT DES SERVICES DU TOURISME SPORTIF - BAC+5 ',
 		description:
 			'Développer des compétences en gestion et promotion du tourisme sportif, apprendre à organiser des événements sportifs, et maîtriser les stratégies de communication pour valoriser les services liés au sport et au tourisme',
 	},
 	{
-		id: 4,
+		id: 5,
 		range: '2009 - 2013',
 		title: 'LICENCE TRADUCTION ET INTERPRETATION EN ANGLAIS - BAC+3',
 		description:

@@ -50,8 +50,9 @@ const Resume = () => {
 										<div className="years-range">{exp.range}</div>
 										<h3 className="title text-uppercase">{exp.title}</h3>
 										{exp.desc?.map((line, id) => (
-											<ul style={{ listStyleType: 'disc', marginTop: '15px' }}>
-												<li key={id}>
+											<ul key = {id} 
+												style={{ listStyleType: 'disc', marginTop: '15px' }}>
+												<li>
 													<p>{line}</p>
 												</li>
 											</ul>
