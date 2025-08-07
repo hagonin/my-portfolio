@@ -4,17 +4,24 @@ import 'react-circular-progressbar/dist/styles.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SkillsImages } from '@/staticData/home/home';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
 
 	return (
 		<div className="section-gap" data-title="Compétences" id="skill">
 			<div className="container">
-				<div className="section-title">
+				<motion.div 
+					className="section-title"
+					initial={{ opacity: 0, y: 30 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6 }}
+					viewport={{ once: true }}
+				>
 					<h2 className="title">
 						<span>Compétences</span>
 					</h2>
-				</div>
+				</motion.div>
 				<div className="clientCarousel owl-carousel">
 					<Swiper
 						breakpoints={{
@@ -53,18 +60,33 @@ const Skills = () => {
 						}}
 						loop={true}
 					>
-						{SkillsImages?.map((item) => (
+						{SkillsImages?.map((item, index) => (
 							<SwiperSlide key={item?.id}>
-								<div className="item">
+								<motion.div 
+									className="item"
+									initial={{ opacity: 0, scale: 0.8 }}
+									whileInView={{ opacity: 1, scale: 1 }}
+									whileHover={{ 
+										scale: 1.1, 
+										rotateY: 10,
+										transition: { duration: 0.3 }
+									}}
+									transition={{ 
+										duration: 0.5, 
+										delay: index * 0.1 
+									}}
+									viewport={{ once: true }}
+								>
 									<Link href={item?.url}>
 										<Image
 											src={item?.image}
 											alt="Mes compétences"
 											width={80}
 											height={80}
+											loading="lazy"
 										/>
 									</Link>
-								</div>
+								</motion.div>
 							</SwiperSlide>
 						))}
 					</Swiper>
