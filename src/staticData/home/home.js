@@ -26,6 +26,12 @@ import skill17Image from '../../../public/assets/images/skills/html5.svg';
 import skill18Image from '../../../public/assets/images/skills/css3.svg';
 import skill19Image from '../../../public/assets/images/skills/photoshop.svg';
 import skill20Image from '../../../public/assets/images/skills/bootstrap.svg';
+import skill21Image from '../../../public/assets/images/skills/java.svg';
+import skill22Image from '../../../public/assets/images/skills/spring.svg';
+import skill23Image from '../../../public/assets/images/skills/angular.svg';
+import skill24Image from '../../../public/assets/images/skills/redis.svg';
+import skill25Image from '../../../public/assets/images/skills/maven.svg';
+import skill26Image from '../../../public/assets/images/skills/jenkins.svg';
 
 import aboutImage from '../../../public/assets/images/hero/portfolio_03.png';
 import aboutImageDark from '../../../public/assets/images/hero/hero-img2-l.webp';
@@ -238,6 +244,36 @@ export const SkillsImages = [
 		url: '#',
 		image: skill20Image?.src,
 	},
+	{
+		id: 21,
+		url: '#',
+		image: skill21Image?.src,
+	},
+	{
+		id: 22,
+		url: '#',
+		image: skill22Image?.src,
+	},
+	{
+		id: 23,
+		url: '#',
+		image: skill23Image?.src,
+	},
+	{
+		id: 24,
+		url: '#',
+		image: skill24Image?.src,
+	},
+	{
+		id: 25,
+		url: '#',
+		image: skill25Image?.src,
+	},
+	{
+		id: 26,
+		url: '#',
+		image: skill26Image?.src,
+	},
 ];
 
 export const expFirstCol = [
@@ -281,6 +317,16 @@ export const expFirstCol = [
 export const expSecondCol = [
 	{
 		id: 1,
+		range: 'Décembre 2025 - Présent',
+		title: 'Développeuse Full-Stack - Do&Go',
+		desc: [
+			'Développement et validation de l\'API (Node.js) avec mise en place de tests automatisés (98,2% de réussite) et intégration de cache Redis en production',
+			'Conception et développement du dashboard Middle Office avec visualisations de données (React.js)',
+			'Refonte complète de l\'interface mobile (Figma → Flutter) avec implémentation des modes light et dark',
+		],
+	},
+	{
+		id: 3,
 		range: 'Mar 2023 - Jun 2023',
 		title: 'Market Research Analyst - Volunteering',
 		desc: [
@@ -290,7 +336,7 @@ export const expSecondCol = [
 		],
 	},
 	{
-		id: 2,
+		id: 4,
 		range: '2016 - 2020',
 		title: 'Conseillère en voyages',
 		desc: [
