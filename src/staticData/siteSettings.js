@@ -6,7 +6,7 @@ import ResumeIcon from '@/components/icons/siteIcons/ResumeIcon';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 export const siteSettings = {
-	logo: 'HG',
+	logo: 'SG',
 	headerMenus: [
 		{
 			id: 1,
