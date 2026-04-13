@@ -15,6 +15,7 @@ const Contact = () => {
 	});
 
 	const [sending, setSending] = useState(false);
+	const [status, setStatus] = useState(null); // null | 'success' | 'error'
 
 	const { fullName, email, subject, message } = formValues;
 
@@ -34,6 +35,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setSending(true);
+		setStatus(null);
 		emailjs
 			.send(
 				process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -45,21 +47,25 @@ const Contact = () => {
 				},
 				process.env.NEXT_PUBLIC_PUBLIC_KEY
 			)
-			.then(
-				(result) => {
-					console.log('Success!', result.text);
-					reset();
-				},
-				(error) => {
-					console.log('Failed...', error);
-				}
-			)
+			.then(() => {
+				reset();
+				setStatus('success');
+			})
+			.catch(() => {
+				setStatus('error');
+			})
 			.finally(() => {
 				setSending(false);
 			});
-
-		reset();
 	};
+
+	// Auto-clear status after 5 seconds
+	useEffect(() => {
+		if (status) {
+			const t = setTimeout(() => setStatus(null), 5000);
+			return () => clearTimeout(t);
+		}
+	}, [status]);
 
 	// Ref for the hidden submit button
 	const submitButtonRef = useRef(null);
@@ -148,6 +154,19 @@ const Contact = () => {
 											<BsArrowRight className="ms-2" size={25} />
 										)}
 									</button>
+								</div>
+								<div aria-live="polite" aria-atomic="true">
+									{status === 'success' && (
+										<p className="mt-3 text-success">
+											Votre message a bien été envoyé. Je vous répondrai bientôt !
+										</p>
+									)}
+									{status === 'error' && (
+										<p className="mt-3 text-danger">
+											Une erreur est survenue. Veuillez réessayer ou me contacter
+											directement par email.
+										</p>
+									)}
 								</div>
 							</form>
 						</div>

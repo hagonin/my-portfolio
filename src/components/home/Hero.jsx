@@ -6,6 +6,7 @@ import { downloadPdf } from "@/utils/downloadPdf";
 import Image from "next/image";
 import lightImage from "../../../public/assets/images/hero/portfolio_04.png";
 import darkImage from "../../../public/assets/images/hero/hero-img.webp";
+import { BsArrowRight } from "react-icons/bs";
 
 const Hero = () => {
     return (
@@ -34,6 +35,11 @@ const Hero = () => {
 						<ul className="buttons">
 							<li>
 								<Button arrow onClick={downloadPdf} />
+							</li>
+							<li>
+								<Link href="#portfolio" className="theme-btn-secondary">
+									Voir mes projets <BsArrowRight className="ms-2" size={20} />
+								</Link>
 							</li>
 						</ul>
 						<div className="hero-img">

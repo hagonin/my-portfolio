@@ -13,7 +13,7 @@ import skill4Image from '../../../public/assets/images/skills/django.svg';
 import skill5Image from '../../../public/assets/images/skills/csharp.svg';
 import skill6Image from '../../../public/assets/images/skills/dot-net.svg';
 import skill7Image from '../../../public/assets/images/skills/nextjs.svg';
-import skill8Image from '../../../public/assets/images/skills/react.svg';
+import skill8Image from '../../../public/assets/images/skills/git.svg';
 import skill9Image from '../../../public/assets/images/skills/mysql.svg';
 import skill10Image from '../../../public/assets/images/skills/postgresql.svg';
 import skill11Image from '../../../public/assets/images/skills/docker.svg';
@@ -144,136 +144,32 @@ export const funItems = [
 ];
 
 export const SkillsImages = [
-	{
-		id: 1,
-		url: '#',
-		image: skill1Image?.src,
-	},
-	{
-		id: 2,
-		url: '#',
-		image: skill2Image?.src,
-	},
-	{
-		id: 3,
-		url: '#',
-		image: skill3Image?.src,
-	},
-	{
-		id: 4,
-		url: '#',
-		image: skill4Image?.src,
-	},
-	{
-		id: 5,
-		url: '#',
-		image: skill5Image?.src,
-	},
-	{
-		id: 6,
-		url: '#',
-		image: skill6Image?.src,
-	},
-	{
-		id: 7,
-		url: '#',
-		image: skill7Image?.src,
-	},
-	{
-		id: 8,
-		url: '#',
-		image: skill8Image?.src,
-	},
-	{
-		id: 9,
-		url: '#',
-		image: skill9Image?.src,
-	},
-	{
-		id: 10,
-		url: '#',
-		image: skill10Image?.src,
-	},
-	{
-		id: 11,
-		url: '#',
-		image: skill11Image?.src,
-	},
-	{
-		id: 12,
-		url: '#',
-		image: skill12Image?.src,
-	},
-	{
-		id: 13,
-		url: '#',
-		image: skill13Image?.src,
-	},
-	{
-		id: 14,
-		url: '#',
-		image: skill14Image?.src,
-	},
-	{
-		id: 15,
-		url: '#',
-		image: skill15Image?.src,
-	},
-	{
-		id: 16,
-		url: '#',
-		image: skill16Image?.src,
-	},
-	{
-		id: 17,
-		url: '#',
-		image: skill17Image?.src,
-	},
-	{
-		id: 18,
-		url: '#',
-		image: skill18Image?.src,
-	},
-	{
-		id: 19,
-		url: '#',
-		image: skill19Image?.src,
-	},
-	{
-		id: 20,
-		url: '#',
-		image: skill20Image?.src,
-	},
-	{
-		id: 21,
-		url: '#',
-		image: skill21Image?.src,
-	},
-	{
-		id: 22,
-		url: '#',
-		image: skill22Image?.src,
-	},
-	{
-		id: 23,
-		url: '#',
-		image: skill23Image?.src,
-	},
-	{
-		id: 24,
-		url: '#',
-		image: skill24Image?.src,
-	},
-	{
-		id: 25,
-		url: '#',
-		image: skill25Image?.src,
-	},
-	{
-		id: 26,
-		url: '#',
-		image: skill26Image?.src,
-	},
+	{ id: 1, url: '#', image: skill1Image?.src, name: 'Python' },
+	{ id: 2, url: '#', image: skill2Image?.src, name: 'React' },
+	{ id: 3, url: '#', image: skill3Image?.src, name: 'JavaScript' },
+	{ id: 4, url: '#', image: skill4Image?.src, name: 'Django' },
+	{ id: 5, url: '#', image: skill5Image?.src, name: 'C#' },
+	{ id: 6, url: '#', image: skill6Image?.src, name: '.NET' },
+	{ id: 7, url: '#', image: skill7Image?.src, name: 'Next.js' },
+	{ id: 8, url: '#', image: skill8Image?.src, name: 'Git' },
+	{ id: 9, url: '#', image: skill9Image?.src, name: 'MySQL' },
+	{ id: 10, url: '#', image: skill10Image?.src, name: 'PostgreSQL' },
+	{ id: 11, url: '#', image: skill11Image?.src, name: 'Docker' },
+	{ id: 12, url: '#', image: skill12Image?.src, name: 'Tailwind CSS' },
+	{ id: 13, url: '#', image: skill13Image?.src, name: 'Firebase' },
+	{ id: 14, url: '#', image: skill14Image?.src, name: 'Figma' },
+	{ id: 15, url: '#', image: skill15Image?.src, name: 'Jira' },
+	{ id: 16, url: '#', image: skill16Image?.src, name: 'GitHub' },
+	{ id: 17, url: '#', image: skill17Image?.src, name: 'HTML5' },
+	{ id: 18, url: '#', image: skill18Image?.src, name: 'CSS3' },
+	{ id: 19, url: '#', image: skill19Image?.src, name: 'Photoshop' },
+	{ id: 20, url: '#', image: skill20Image?.src, name: 'Bootstrap' },
+	{ id: 21, url: '#', image: skill21Image?.src, name: 'Java' },
+	{ id: 22, url: '#', image: skill22Image?.src, name: 'Spring' },
+	{ id: 23, url: '#', image: skill23Image?.src, name: 'Angular' },
+	{ id: 24, url: '#', image: skill24Image?.src, name: 'Redis' },
+	{ id: 25, url: '#', image: skill25Image?.src, name: 'Maven' },
+	{ id: 26, url: '#', image: skill26Image?.src, name: 'Jenkins' },
 ];
 
 export const expFirstCol = [
