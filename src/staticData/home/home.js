@@ -117,8 +117,8 @@ export const funItems = [
 		id: 1,
 		Svg: <WorkingHours />,
 		startCount: 1,
-		endCount: 3987,
-		title: 'HEURES DE TRAVAIL',
+		endCount: 4,
+		title: "ANNÉES D'EXPÉRIENCE EN DÉVELOPPEMENT",
 	},
 	{
 		id: 2,
