@@ -10,34 +10,14 @@ import { useReducedMotion } from '@/hooks/use-reduced-motion';
 const Skills = () => {
 	const prefersReduced = useReducedMotion();
 
-	const titleMotionProps = prefersReduced
-		? { initial: false }
-		: {
-				initial: { opacity: 0, y: 30 },
-				whileInView: { opacity: 1, y: 0 },
-				transition: { duration: 0.6 },
-				viewport: { once: true },
-		  };
-
-	const getItemMotionProps = (index) =>
-		prefersReduced
-			? { initial: false }
-			: {
-					initial: { opacity: 0, scale: 0.8 },
-					whileInView: { opacity: 1, scale: 1 },
-					whileHover: { scale: 1.1, rotateY: 10, transition: { duration: 0.3 } },
-					transition: { duration: 0.5, delay: index * 0.1 },
-					viewport: { once: true },
-			  };
-
 	return (
 		<div className="section-gap" data-title="Compétences" id="skill">
 			<div className="container">
-				<motion.div className="section-title" {...titleMotionProps}>
+				<div className="section-title">
 					<h2 className="title">
 						<span>Compétences</span>
 					</h2>
-				</motion.div>
+				</div>
 				<div className="clientCarousel owl-carousel">
 					<Swiper
 						breakpoints={{
@@ -65,9 +45,14 @@ const Skills = () => {
 						}
 						loop={true}
 					>
-						{SkillsImages?.map((item, index) => (
+						{SkillsImages?.map((item) => (
 							<SwiperSlide key={item?.id}>
-								<motion.div className="item" {...getItemMotionProps(index)}>
+								<motion.div
+									className="item"
+									whileHover={
+										prefersReduced ? {} : { scale: 1.1, rotateY: 10, transition: { duration: 0.3 } }
+									}
+								>
 									<Link href={item?.url}>
 										<Image
 											src={item?.image}
