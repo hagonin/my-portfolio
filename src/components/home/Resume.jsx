@@ -1,11 +1,11 @@
-import { expFirstCol, expSecondCol } from '@/staticData/home/home';
+import { educationData, experienceData } from '@/staticData/resume-data';
 import EducationIcon from '../icons/home/EducationIcon';
 import ExperimentIcon from '../icons/home/ExperimentIcon';
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 import { useTranslation } from '@/hooks/use-translations';
 
-function ExperienceCol({ range, title, description }) {
+function EducationItem({ item, locale }) {
 	const prefersReduced = useReducedMotion();
 
 	return (
@@ -13,15 +13,54 @@ function ExperienceCol({ range, title, description }) {
 			className="timeline-item"
 			whileHover={prefersReduced ? {} : { scale: 1.02 }}
 		>
-			<div className="years-range">{range}</div>
-			<h3 className="title">{title}</h3>
-			<p>{description}</p>
+			<div className="years-range">{item.range[locale] || item.range.fr}</div>
+			<h3 className="title">{item.title[locale] || item.title.fr}</h3>
+			<p>{item.description[locale] || item.description.fr}</p>
+		</motion.div>
+	);
+}
+
+function ExperienceItem({ item, locale }) {
+	const prefersReduced = useReducedMotion();
+	const descList = item.desc[locale] || item.desc.fr;
+
+	return (
+		<motion.div
+			className="timeline-item"
+			whileHover={prefersReduced ? {} : { scale: 1.02 }}
+		>
+			<div className="years-range">{item.range[locale] || item.range.fr}</div>
+			<h3 className="title text-uppercase">{item.title[locale] || item.title.fr}</h3>
+			<div style={{ marginTop: '15px' }}>
+				{descList?.map((line, id) => (
+					<div
+						key={id}
+						style={{
+							marginBottom: '8px',
+							paddingLeft: '16px',
+							position: 'relative',
+						}}
+					>
+						<span
+							style={{
+								position: 'absolute',
+								left: '0',
+								top: '8px',
+								width: '4px',
+								height: '4px',
+								backgroundColor: 'currentColor',
+								borderRadius: '50%',
+							}}
+						></span>
+						<p style={{ margin: 0 }}>{line}</p>
+					</div>
+				))}
+			</div>
 		</motion.div>
 	);
 }
 
 const Resume = () => {
-	const prefersReduced = useReducedMotion();
 	const { t, locale } = useTranslation();
 
 	return (
@@ -41,8 +80,8 @@ const Resume = () => {
 							</div>
 							<div className="timeline">
 								<div className="timeline-divider"></div>
-								{expFirstCol?.map((item) => (
-									<ExperienceCol key={item?.id} {...item} />
+								{educationData?.map((item) => (
+									<EducationItem key={item.id} item={item} locale={locale} />
 								))}
 							</div>
 						</div>
@@ -56,40 +95,8 @@ const Resume = () => {
 							</div>
 							<div className="timeline order-lg-first">
 								<div className="timeline-divider"></div>
-								{expSecondCol?.map((exp) => (
-									<motion.div
-										className="timeline-item"
-										key={exp.id}
-										whileHover={prefersReduced ? {} : { scale: 1.02 }}
-									>
-										<div className="years-range">{exp.range}</div>
-										<h3 className="title text-uppercase">{exp.title}</h3>
-										<div style={{ marginTop: '15px' }}>
-											{exp.desc?.map((line, id) => (
-												<div
-													key={id}
-													style={{
-														marginBottom: '8px',
-														paddingLeft: '16px',
-														position: 'relative',
-													}}
-												>
-													<span
-														style={{
-															position: 'absolute',
-															left: '0',
-															top: '8px',
-															width: '4px',
-															height: '4px',
-															backgroundColor: 'currentColor',
-															borderRadius: '50%',
-														}}
-													></span>
-													<p style={{ margin: 0 }}>{line}</p>
-												</div>
-											))}
-										</div>
-									</motion.div>
+								{experienceData?.map((item) => (
+									<ExperienceItem key={item.id} item={item} locale={locale} />
 								))}
 							</div>
 						</div>
