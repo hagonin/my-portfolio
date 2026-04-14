@@ -35,11 +35,6 @@ const Hero = () => {
 							<li>
 								<Button arrow onClick={downloadPdf} text={t('about.downloadCv')} />
 							</li>
-							<li>
-								<Link href="#portfolio" className="theme-btn-secondary">
-									{t('hero.ctaProjects')} <BsArrowRight className="ms-2" size={20} />
-								</Link>
-							</li>
 						</ul>
 						<div className="hero-img">
 							<Image

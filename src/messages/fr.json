@@ -21,9 +21,9 @@
     "downloadCv": "TÉLÉCHARGER CV"
   },
   "funFacts": [
-    { "title": "HEURES DE TRAVAIL" },
-    { "title": "DIPLÔME D'ÉTUDES SUPÉRIEURS OBTENUES" },
-    { "title": "POLYGOTTE DU CODE" },
+    { "title": "ANNÉES D'EXPÉRIENCE" },
+    { "title": "DIPLÔMES D'ÉTUDES SUPÉRIEURES OBTENUS" },
+    { "title": "POLYGLOTTE DU CODE" },
     { "title": "PRIX DU HACKATHON POUR LA MEILLEURE UX/UI" }
   ],
   "skills": {

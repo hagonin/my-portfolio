@@ -1,37 +1,38 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import useMediaQuery from '@/hooks/useMediaQuery';
 import { AnimatePresence } from 'framer-motion';
 import PortfolioItem from './PortfolioItem';
 import PortfolioModal from './PortfolioModal';
-import AirsenShowcase from './AirsenShowcase';
-import IminShowcase from './IminShowcase';
 import FilterButton from './PortfolioFilterMenu';
-import { projectsData, projectFilters } from '@/staticData/projects-data';
-import { useTranslation } from '@/hooks/use-translations';
+import { portfoliosData, menuLists } from '@/staticData/home/portfolioData';
 import Button from '@/components/ui/Button';
+import { useTranslation } from '@/hooks/use-translations';
 
 const Portfolio = () => {
-	const { t, locale } = useTranslation();
-	const [activeFilter, setActiveFilter] = useState('all');
+	const isMobile = useMediaQuery('(max-width: 592px)');
+	const [marginTop, setMarginTop] = useState('60px');
+	const [active, setActive] = useState('all');
 	const [modalData, setModalData] = useState({ isOpen: false, selected: null });
+	const { t, locale } = useTranslation();
 
-	const openModal = (project) => {
-		setModalData({ isOpen: true, selected: project });
+	useEffect(() => {
+		setMarginTop(isMobile ? '0px' : '60px');
+	}, [isMobile]);
+
+	const openModal = (portfolio) => {
+		setModalData({ isOpen: true, selected: portfolio });
 	};
 
 	const closeModal = () => {
 		setModalData({ isOpen: false, selected: null });
 	};
 
-	const filteredProjects = projectsData
-		.filter((project) => activeFilter === 'all' || project.types.includes(activeFilter))
-		.sort((a, b) => a.order - b.order);
+	const filteredPortfolios = portfoliosData.filter(
+		(portfolio) => active === 'all' || portfolio.types.includes(active)
+	);
 
 	return (
-		<div
-			className="portfolio section-gap"
-			data-title={locale === 'en' ? 'Portfolio' : 'Portfolio'}
-			id="portfolio"
-		>
+		<div className="portfolio" data-title={locale === 'en' ? 'Portfolio' : 'Portfolio'} id="portfolio">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
@@ -40,22 +41,23 @@ const Portfolio = () => {
 				</div>
 				<div className="portfolio-wrapper">
 					<ul className="filter-button">
-						{projectFilters.map((filter) => (
+						{menuLists.map((item) => (
 							<FilterButton
-								key={filter.value}
-								filter={filter}
-								isActive={activeFilter === filter.value}
-								onClick={() => setActiveFilter(filter.value)}
+								key={item.value}
+								label={item.label}
+								isActive={active === item.value}
+								onClick={() => setActive(item.value)}
 							/>
 						))}
 					</ul>
 					<div className="portfolio-inner row gallery_zoom">
-						<AnimatePresence mode="popLayout">
-							{filteredProjects.map((project) => (
+						<AnimatePresence>
+							{filteredPortfolios.map((portfolio) => (
 								<PortfolioItem
-									key={project.id}
-									project={project}
-									onClick={() => openModal(project)}
+									key={portfolio.id}
+									portfolio={portfolio}
+									marginTop={marginTop}
+									onClick={() => openModal(portfolio)}
 								/>
 							))}
 						</AnimatePresence>
@@ -63,25 +65,12 @@ const Portfolio = () => {
 				</div>
 			</div>
 
-			{modalData.selected?.id === 'airsen' ? (
-				<AirsenShowcase
-					isOpen={modalData.isOpen}
-					onClose={closeModal}
-					project={modalData.selected}
-				/>
-			) : modalData.selected?.id === 'imin' ? (
-				<IminShowcase
-					isOpen={modalData.isOpen}
-					onClose={closeModal}
-					project={modalData.selected}
-				/>
-			) : (
-				<PortfolioModal
-					isOpen={modalData.isOpen}
-					onRequestClose={closeModal}
-					project={modalData.selected}
-				/>
-			)}
+			<PortfolioModal
+				isOpen={modalData.isOpen}
+				onRequestClose={closeModal}
+				selectedImage={modalData.selected?.video}
+				selectedPortfolio={modalData.selected}
+			/>
 
 			<div className="all-blog-button-area text-center">
 				<Button
@@ -90,71 +79,6 @@ const Portfolio = () => {
 					onClick={() => window.open('https://github.com/hagonin', '_blank')}
 				/>
 			</div>
-
-			<style jsx>{`
-				.portfolio {
-					padding: 80px 0;
-				}
-				.portfolio-wrapper {
-					margin-bottom: 2rem;
-				}
-				.filter-button {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: center;
-					gap: 0.5rem;
-					list-style: none;
-					padding: 0;
-					margin: 0 0 2rem 0;
-				}
-				.portfolio-inner {
-					display: flex;
-					flex-wrap: wrap;
-					gap: 1.5rem;
-				}
-				.portfolio-inner :global(.portfolio-item) {
-					margin-bottom: 1.5rem;
-				}
-				.all-blog-button-area {
-					margin-top: 2rem;
-				}
-			`}</style>
-
-			<style jsx global>{`
-				.filter-button li {
-					padding: 0.5rem 1.25rem;
-					border-radius: 9999px;
-					cursor: pointer;
-					font-weight: 500;
-					font-size: 0.875rem;
-					background-color: transparent;
-					border: 2px solid #e5e7eb;
-					color: #6b7280;
-					transition: all 0.2s ease;
-				}
-				.filter-button li:hover {
-					border-color: #3b82f6;
-					color: #3b82f6;
-				}
-				.filter-button li.active {
-					background-color: #3b82f6;
-					border-color: #3b82f6;
-					color: #fff;
-				}
-				[data-bs-theme="dark"] .filter-button li {
-					border-color: #374151;
-					color: #9ca3af;
-				}
-				[data-bs-theme="dark"] .filter-button li:hover {
-					border-color: #3b82f6;
-					color: #3b82f6;
-				}
-				[data-bs-theme="dark"] .filter-button li.active {
-					background-color: #3b82f6;
-					border-color: #3b82f6;
-					color: #fff;
-				}
-			`}</style>
 		</div>
 	);
 };

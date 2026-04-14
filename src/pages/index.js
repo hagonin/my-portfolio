@@ -3,7 +3,6 @@ import AboutMe from '@/components/home/About/AboutMe';
 import Skills from '@/components/home/Skills';
 import Resume from '@/components/home/Resume';
 import Portfolio from '@/components/home/Portfolio/Portfolio';
-import GithubStats from '@/components/github/GithubStats';
 import Contact from '@/components/home/Contact/Contact';
 import Layout from '@/layout/Layout';
 
@@ -15,7 +14,6 @@ export default function Home() {
 			<Skills />
 			<Resume />
 			<Portfolio />
-			<GithubStats />
 			<Contact />
 		</Layout>
 	);
