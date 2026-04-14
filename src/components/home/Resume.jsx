@@ -3,6 +3,7 @@ import EducationIcon from '../icons/home/EducationIcon';
 import ExperimentIcon from '../icons/home/ExperimentIcon';
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslation } from '@/hooks/use-translations';
 
 function ExperienceCol({ range, title, description }) {
 	const prefersReduced = useReducedMotion();
@@ -21,13 +22,14 @@ function ExperienceCol({ range, title, description }) {
 
 const Resume = () => {
 	const prefersReduced = useReducedMotion();
+	const { t, locale } = useTranslation();
 
 	return (
-		<div className="resume" data-title="Parcours" id="resume">
+		<div className="resume" data-title={locale === 'en' ? 'Resume' : 'Parcours'} id="resume">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
-						<span>Parcours</span>
+						<span>{t('resume.title')}</span>
 					</h2>
 				</div>
 				<div className="row resume-content-area">
@@ -35,7 +37,7 @@ const Resume = () => {
 						<div className="timeline-box odd">
 							<div className="icon-box text-center">
 								<EducationIcon viewBox="0 0 37 37" />
-								<div className="box-title">FORMATIONS</div>
+								<div className="box-title">{t('resume.education')}</div>
 							</div>
 							<div className="timeline">
 								<div className="timeline-divider"></div>
@@ -50,7 +52,7 @@ const Resume = () => {
 						<div className="timeline-box even">
 							<div className="icon-box text-center order-lg-last">
 								<ExperimentIcon viewBox="0 0 31 35" />
-								<div className="box-title">EXPÉRIENCES</div>
+								<div className="box-title">{t('resume.experience')}</div>
 							</div>
 							<div className="timeline order-lg-first">
 								<div className="timeline-divider"></div>

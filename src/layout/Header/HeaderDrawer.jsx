@@ -7,9 +7,18 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import heroImage from "../../../public/assets/images/hero/avatar-2.png";
+import { useTranslation } from "@/hooks/use-translations";
+
+const menuTranslationKeys = {
+  1: 'nav.home',
+  2: 'nav.about',
+  3: 'nav.resume',
+  4: 'nav.portfolio'
+};
 
 const HeaderDrawer = ({ isOpen, toggleDrawer }) => {
   const isMobile = useMediaQuery("(max-width: 1199px)");
+  const { t } = useTranslation();
 
   const router = useRouter();
 
@@ -63,15 +72,12 @@ const HeaderDrawer = ({ isOpen, toggleDrawer }) => {
 								alt="Ha GONIN - Full-stack Développeuse"
 							/>
 						</div>
-						<h3>Je suis Ha</h3>
+						<h3>{t('hero.title')} {t('hero.name')}</h3>
 						<div className="ah-headline clip">
 							<div className="ah-words-wrapper">
 								<Typewriter
 									options={{
-										strings: [
-											'Full-stack Développeuse',
-											'Web Développement et Mobile',
-										],
+										strings: t('hero.typewriter'),
 										autoStart: true,
 										loop: true,
 										delay: 20,
@@ -92,7 +98,7 @@ const HeaderDrawer = ({ isOpen, toggleDrawer }) => {
 										data-section={menu.selector}
 									>
 										{menu?.Icon}
-										{menu?.title}
+										{menuTranslationKeys[menu?.id] ? t(menuTranslationKeys[menu?.id]) : menu?.title}
 									</Link>
 								</li>
 							))}

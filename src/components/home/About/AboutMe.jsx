@@ -1,14 +1,18 @@
 import { aboutMe } from '@/staticData/home/home';
 import FunFacts from './FunFacts';
 import Image from 'next/image';
+import { useTranslation } from '@/hooks/use-translations';
 
 const AboutMe = () => {
+	const { t, locale } = useTranslation();
+	const aboutDesc = t('about.desc');
+
 	return (
-		<div className="about h-100" data-title="À PROPOS" id="about">
+		<div className="about h-100" data-title={locale === 'en' ? 'ABOUT' : 'À PROPOS'} id="about">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
-						<span>À Propos</span>
+						<span>{locale === 'en' ? 'About' : 'À Propos'}</span>
 					</h2>
 				</div>
 				<div className="row align-items-end">
@@ -19,7 +23,7 @@ const AboutMe = () => {
 								className="about-thumb light img-fluid"
 								width={325}
 								height={380}
-								alt="Ha Gonin - my portfolio"
+								alt="Sarah Gonin - my portfolio"
 								loading="lazy"
 							/>
 						</div>
@@ -28,10 +32,10 @@ const AboutMe = () => {
 						<div className="details">
 							<h3 className="name">{aboutMe?.name}</h3>
 							<h4 className="designation">
-								{aboutMe?.designation} <span className="line"></span>
+								{t('about.designation')} <span className="line"></span>
 							</h4>
 							<div className="bio">
-								{aboutMe.desc.map((text, index) => (
+								{Array.isArray(aboutDesc) && aboutDesc.map((text, index) => (
 									<p key={index} className="mb-3">
 										{text}
 									</p>

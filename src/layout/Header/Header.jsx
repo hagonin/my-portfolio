@@ -1,9 +1,19 @@
 import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import LanguageToggle from "@/components/i18n/LanguageToggle";
+import { useTranslation } from "@/hooks/use-translations";
+
+const menuTranslationKeys = {
+  1: 'nav.home',
+  2: 'nav.about',
+  3: 'nav.resume',
+  4: 'nav.portfolio'
+};
 
 const Header = ({ activeMenuItem }) => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   let pathSegments = "";
   let firstSegment = "";
@@ -47,19 +57,21 @@ const Header = ({ activeMenuItem }) => {
                 data-section={menu.selector}
               >
                 {menu?.Icon}
-                {menu?.title}
+                {menuTranslationKeys[menu?.id] ? t(menuTranslationKeys[menu?.id]) : menu?.title}
               </Link>
             </li>
           ))}
         </ul>
       </div>
 
+      <LanguageToggle />
+
       <div className="contact-btn">
         <Link
           href={isHomepage ? siteSettings?.headerBottom?.url : "/#contact"}
           className="stretched-link"
         >
-          {siteSettings?.headerBottom?.title}
+          {t('nav.contact')}
         </Link>
       </div>
     </header>

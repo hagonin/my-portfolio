@@ -1,5 +1,6 @@
 import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
+import LanguageToggle from "@/components/i18n/LanguageToggle";
 
 const MobileHeader = ({ toggleDrawer }) => {
   return (
@@ -8,6 +9,7 @@ const MobileHeader = ({ toggleDrawer }) => {
         <div className="nav-brand">
           <Link href="/">{siteSettings?.logo}</Link>
         </div>
+        <LanguageToggle />
         <button
           onClick={toggleDrawer}
           className="toggler-menu me-2"

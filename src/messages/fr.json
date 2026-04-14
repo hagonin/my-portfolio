@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "greeting": "Bonjour",
+    "title": "Je suis",
+    "name": "Sarah",
+    "typewriter": [
+      "Développeuse Full-stack",
+      "Web Développement et Mobile",
+      "Concepteuse et Développeuse d'Applications"
+    ],
+    "ctaProjects": "Voir mes projets"
+  },
+  "about": {
+    "designation": "DÉVÉLOPPEUSE FULL-STACK",
+    "desc": [
+      "Je suis une développeuse web passionnée par la tech, avec un sens de l'esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.",
+      "Après mes premiers pas dans le développement web à 17 ans et l'exploration des bases de la programmation en 2017, c'est en 2021 que j'ai plongé sérieusement dans le code à travers des formations intensives et approfondies.",
+      "Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs.",
+      "Je suis ouverte et motivée pour collaborer et participer à des projets innovants et percutants dans le secteur des nouvelles technologies."
+    ],
+    "downloadCv": "TÉLÉCHARGER CV"
+  },
+  "funFacts": [
+    { "title": "HEURES DE TRAVAIL" },
+    { "title": "DIPLÔME D'ÉTUDES SUPÉRIEURS OBTENUES" },
+    { "title": "POLYGOTTE DU CODE" },
+    { "title": "PRIX DU HACKATHON POUR LA MEILLEURE UX/UI" }
+  ],
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Mes compétences techniques"
+  },
+  "resume": {
+    "title": "Parcours",
+    "experience": "EXPÉRIENCES",
+    "education": "FORMATIONS"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Mes projets récents",
+    "viewProject": "Voir le projet",
+    "viewCode": "Voir le code",
+    "problem": "Problème",
+    "solution": "Solution",
+    "results": "Résultats"
+  },
+  "contact": {
+    "title": "NUMÉRO TÉLÉPHONE",
+    "emailTitle": "ADRESSE EMAIL",
+    "locationTitle": "LOCALISATION",
+    "websiteTitle": "WEBSITE",
+    "formName": "Votre Nom",
+    "formEmail": "Votre Email",
+    "formMessage": "Votre Message",
+    "formSend": "Envoyer",
+    "formSending": "Envoi en cours...",
+    "formSuccess": "Message envoyé avec succès !",
+    "formError": "Erreur lors de l'envoi. Veuillez réessayer."
+  },
+  "nav": {
+    "home": "ACCUEIL",
+    "about": "A PROPOS",
+    "resume": "PARCOURS",
+    "portfolio": "PORTFOLIO",
+    "contact": "Me contacter"
+  },
+  "footer": {
+    "githubTooltip": "Suivez-moi sur Github",
+    "linkedinTooltip": "Suivez-moi sur Linkedin"
+  }
+}
