@@ -43,7 +43,27 @@
     "viewMore": "Voir plus de projets sur GitHub",
     "problem": "Problème",
     "solution": "Solution",
-    "results": "Résultats"
+    "results": "Résultats",
+    "description": "Description",
+    "sourceCode": "Code source",
+    "visitSite": "Vers le site",
+    "projects": {
+      "airsen": {
+        "description": "Application full-stack de surveillance de la qualité de l'air avec carte interactive de 35k+ communes françaises, système d'alertes personnalisables et forum communautaire."
+      },
+      "imin": {
+        "description": "Application mobile de réseau social développée chez Do&Go. Refonte complète de l'UI/UX et implémentation en Flutter. Contribution aux tests backend Node.js, couverture des endpoints manquants et mise en place d'infrastructure de benchmarking avec intégration AdminJS."
+      },
+      "homecook": {
+        "description": "Une application web de gestion de recettes permettant la création, le stockage et la recherche par catégories et ingrédients, avec authentification des utilisateurs pour la gestion des comptes et des recettes."
+      },
+      "freshmeals": {
+        "description": "Un site e-commerce responsive permettant aux utilisateurs de parcourir des produits biologiques, sélectionner des articles à acheter, les ajouter au panier, créer un compte et se connecter."
+      },
+      "healthyfood": {
+        "description": "Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement."
+      }
+    }
   },
   "contact": {
     "title": "NUMÉRO TÉLÉPHONE",

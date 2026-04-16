@@ -43,7 +43,27 @@
     "viewMore": "View more projects on GitHub",
     "problem": "Problem",
     "solution": "Solution",
-    "results": "Results"
+    "results": "Results",
+    "description": "Description",
+    "sourceCode": "Source Code",
+    "visitSite": "Visit Site",
+    "projects": {
+      "airsen": {
+        "description": "Full-stack air quality monitoring application with interactive map of 35k+ French municipalities, customizable alert system and community forum."
+      },
+      "imin": {
+        "description": "Social network mobile app developed at Do&Go. Redesigned the full UI/UX from scratch and implemented it in Flutter. Contributed to Node.js backend testing, missing endpoint coverage and benchmarking infrastructure with AdminJS integration."
+      },
+      "homecook": {
+        "description": "A recipe management web application enabling creation, storage and search by categories and ingredients, with user authentication for account and recipe management."
+      },
+      "freshmeals": {
+        "description": "A responsive e-commerce site allowing users to browse organic products, select items to purchase, add them to cart, create an account and log in."
+      },
+      "healthyfood": {
+        "description": "This project is a replica of the Slimming World website, created as a training project."
+      }
+    }
   },
   "contact": {
     "title": "PHONE NUMBER",
