@@ -1,7 +1,14 @@
 import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/use-translations";
+
+const tooltipKeys = {
+  1: 'footer.githubTooltip',
+  2: 'footer.linkedinTooltip'
+};
 
 const Footer = () => {
+  const { t } = useTranslation();
 
   return (
     <footer className="site-footer">
@@ -12,12 +19,12 @@ const Footer = () => {
             }`}
           >
             <p className="">
-              Copyright &copy; {new Date().getFullYear()} All Right Reserved
+              Copyright &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
           </div>
           <div className="col-lg-6">
             <ul
-              className={`social-media text-center text-lg-start mt-lg-0 
+              className={`social-media text-center text-lg-start mt-lg-0
               }`}
             >
               {siteSettings?.footerItems?.map((item) => (
@@ -25,7 +32,7 @@ const Footer = () => {
                   <Link
                     aria-label={"Visit social media"}
                     target="_blank"
-                    title={item?.title}
+                    title={tooltipKeys[item?.id] ? t(tooltipKeys[item?.id]) : item?.tooltip}
                     href={item?.url}
                   >
                     {item?.Icon}

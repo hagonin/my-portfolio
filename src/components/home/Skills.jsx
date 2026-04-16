@@ -6,16 +6,18 @@ import Image from 'next/image';
 import { SkillsImages } from '@/staticData/home/home';
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
+import { useTranslation } from '@/hooks/use-translations';
 
 const Skills = () => {
 	const prefersReduced = useReducedMotion();
+	const { t, locale } = useTranslation();
 
 	return (
-		<div className="section-gap" data-title="Compétences" id="skill">
+		<div className="section-gap" data-title={locale === 'en' ? 'Skills' : 'Compétences'} id="skill">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
-						<span>Compétences</span>
+						<span>{t('skills.title')}</span>
 					</h2>
 				</div>
 				<div className="clientCarousel owl-carousel">

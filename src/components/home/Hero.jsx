@@ -7,24 +7,23 @@ import Image from "next/image";
 import lightImage from "../../../public/assets/images/hero/portfolio_04.png";
 import darkImage from "../../../public/assets/images/hero/hero-img.webp";
 import { BsArrowRight } from "react-icons/bs";
+import { useTranslation } from "@/hooks/use-translations";
 
 const Hero = () => {
+	const { t } = useTranslation();
+
     return (
 			<div className="hero-banner" id="home">
 				<div className="container">
 					<div className="content-inner">
-						<h2 className="hero-subtitle">Bonjour</h2>
+						<h2 className="hero-subtitle">{t('hero.greeting')}</h2>
 						<h1 className="hero-title">
-							Je suis <span className="bottom-border">Sarah</span>
+							{t('hero.title')} <span className="bottom-border">{t('hero.name')}</span>
 						</h1>
 						<div className="typewritter">
 							<Typewriter
 								options={{
-									strings: [
-										'Développeuse Full-stack ',
-										'Web Développement et Mobile',
-										"Concepteuse et Développeuses d'Applications",
-									],
+									strings: t('hero.typewriter'),
 									autoStart: true,
 									loop: true,
 									delay: 20,
@@ -34,12 +33,7 @@ const Hero = () => {
 						</div>
 						<ul className="buttons">
 							<li>
-								<Button arrow onClick={downloadPdf} />
-							</li>
-							<li>
-								<Link href="#portfolio" className="theme-btn-secondary">
-									Voir mes projets <BsArrowRight className="ms-2" size={20} />
-								</Link>
+								<Button arrow onClick={downloadPdf} text={t('about.downloadCv')} />
 							</li>
 						</ul>
 						<div className="hero-img">

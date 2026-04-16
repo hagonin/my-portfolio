@@ -124,7 +124,7 @@ export const funItems = [
 		id: 2,
 		Svg: <EducationIcon />,
 		startCount: 0,
-		endCount: 3,
+		endCount: 4,
 		title: "DIPLÔME D'ÉTUDES SUPÉRIEURS OBTENUES",
 	},
 	{

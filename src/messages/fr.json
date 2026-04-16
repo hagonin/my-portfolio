@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "greeting": "Bonjour",
+    "title": "Je suis",
+    "name": "Sarah",
+    "typewriter": [
+      "Développeuse Full-stack",
+      "Web Développement et Mobile",
+      "Concepteuse et Développeuse d'Applications"
+    ],
+    "ctaProjects": "Voir mes projets"
+  },
+  "about": {
+    "designation": "DÉVÉLOPPEUSE FULL-STACK",
+    "desc": [
+      "Je suis une développeuse web passionnée par la tech, avec un sens de l'esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.",
+      "Après mes premiers pas dans le développement web à 17 ans et l'exploration des bases de la programmation en 2017, c'est en 2021 que j'ai plongé sérieusement dans le code à travers des formations intensives et approfondies.",
+      "Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs.",
+      "Je suis ouverte et motivée pour collaborer et participer à des projets innovants et percutants dans le secteur des nouvelles technologies."
+    ],
+    "downloadCv": "TÉLÉCHARGER CV"
+  },
+  "funFacts": [
+    { "title": "ANNÉES D'EXPÉRIENCE" },
+    { "title": "DIPLÔMES D'ÉTUDES SUPÉRIEURES OBTENUS" },
+    { "title": "POLYGLOTTE DU CODE" },
+    { "title": "PRIX DU HACKATHON POUR LA MEILLEURE UX/UI" }
+  ],
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Mes compétences techniques"
+  },
+  "resume": {
+    "title": "Parcours",
+    "experience": "EXPÉRIENCES",
+    "education": "FORMATIONS"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Mes projets récents",
+    "viewProject": "Voir le projet",
+    "viewCode": "Voir le code",
+    "viewMore": "Voir plus de projets sur GitHub",
+    "problem": "Problème",
+    "solution": "Solution",
+    "results": "Résultats",
+    "description": "Description",
+    "sourceCode": "Code source",
+    "visitSite": "Vers le site",
+    "projects": {
+      "airsen": {
+        "description": "Application full-stack de surveillance de la qualité de l'air avec carte interactive de 35k+ communes françaises, système d'alertes personnalisables et forum communautaire."
+      },
+      "imin": {
+        "description": "Application mobile de réseau social développée chez Do&Go. Refonte complète de l'UI/UX et implémentation en Flutter. Contribution aux tests backend Node.js, couverture des endpoints manquants et mise en place d'infrastructure de benchmarking avec intégration AdminJS."
+      },
+      "homecook": {
+        "description": "Une application web de gestion de recettes permettant la création, le stockage et la recherche par catégories et ingrédients, avec authentification des utilisateurs pour la gestion des comptes et des recettes."
+      },
+      "freshmeals": {
+        "description": "Un site e-commerce responsive permettant aux utilisateurs de parcourir des produits biologiques, sélectionner des articles à acheter, les ajouter au panier, créer un compte et se connecter."
+      },
+      "healthyfood": {
+        "description": "Ce projet est une réplique du site Slimming World, réalisé dans le cadre d'un projet d'entraînement."
+      }
+    }
+  },
+  "contact": {
+    "title": "NUMÉRO TÉLÉPHONE",
+    "emailTitle": "ADRESSE EMAIL",
+    "locationTitle": "LOCALISATION",
+    "websiteTitle": "WEBSITE",
+    "formName": "Votre Nom",
+    "formEmail": "Votre Email",
+    "formMessage": "Votre Message",
+    "formSend": "Envoyer",
+    "formSending": "Envoi en cours...",
+    "formSuccess": "Message envoyé avec succès !",
+    "formError": "Erreur lors de l'envoi. Veuillez réessayer."
+  },
+  "nav": {
+    "home": "ACCUEIL",
+    "about": "A PROPOS",
+    "resume": "PARCOURS",
+    "portfolio": "PORTFOLIO",
+    "contact": "Me contacter"
+  },
+  "footer": {
+    "githubTooltip": "Suivez-moi sur Github",
+    "linkedinTooltip": "Suivez-moi sur Linkedin"
+  }
+}

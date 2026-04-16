@@ -5,8 +5,10 @@ import Textarea from '../../ui/fields/Textarea';
 import { contactInfo } from '@/staticData/home/home';
 import { BsArrowRight } from 'react-icons/bs';
 import ContactInfoItem from './ContactInfoItem';
+import { useTranslation } from '@/hooks/use-translations';
 
 const Contact = () => {
+	const { t, locale } = useTranslation();
 	const [formValues, setFormValues] = useState({
 		fullName: '',
 		email: '',
@@ -76,15 +78,16 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="contact" data-title="Contacte" id="contact">
+		<div className="contact" data-title={locale === 'en' ? 'Contact' : 'Contacte'} id="contact">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
-						<span>Me</span> Contacter
+						<span>{locale === 'en' ? 'Contact' : 'Me'}</span> {locale === 'en' ? 'Me' : 'Contacter'}
 					</h2>
 					<p>
-						N'hésitez pas à me contacter, je vous répondrai dans les plus brefs
-						délais
+						{locale === 'en'
+							? "Feel free to contact me, I'll get back to you as soon as possible"
+							: "N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais"}
 					</p>
 				</div>
 
@@ -94,8 +97,8 @@ const Contact = () => {
 							<form onSubmit={handleSubmit}>
 								<div className="form-group form-floating">
 									<Input
-										placeholder="Nom et Prénom"
-										label="Nom et Prénom"
+										placeholder={locale === 'en' ? 'Full Name' : 'Nom et Prénom'}
+										label={locale === 'en' ? 'Full Name' : 'Nom et Prénom'}
 										handleChange={handleChange}
 										name="fullName"
 										value={fullName}
@@ -104,8 +107,8 @@ const Contact = () => {
 								<div className="form-group form-floating">
 									<Input
 										type="email"
-										placeholder="Adresse Email"
-										label="Adresse Email"
+										placeholder={locale === 'en' ? 'Email Address' : 'Adresse Email'}
+										label={locale === 'en' ? 'Email Address' : 'Adresse Email'}
 										handleChange={handleChange}
 										name="email"
 										value={email}
@@ -113,8 +116,8 @@ const Contact = () => {
 								</div>
 								<div className="form-group form-floating">
 									<Input
-										placeholder="Objet"
-										label="Objet"
+										placeholder={locale === 'en' ? 'Subject' : 'Objet'}
+										label={locale === 'en' ? 'Subject' : 'Objet'}
 										handleChange={handleChange}
 										name="subject"
 										value={subject}
@@ -136,7 +139,7 @@ const Contact = () => {
 										style={{ display: 'none' }}
 										ref={submitButtonRef}
 									>
-										ENVOYER
+										{locale === 'en' ? 'SEND' : 'ENVOYER'}
 									</button>
 									{/* Custom submit button */}
 									<button
@@ -144,7 +147,7 @@ const Contact = () => {
 										className="theme-btn border-0"
 										onClick={handleCustomSubmit}
 									>
-										ENVOYER
+										{locale === 'en' ? 'SEND' : 'ENVOYER'}
 										{sending ? (
 											<div
 												className="spinner-border text-light me-2"
@@ -158,13 +161,12 @@ const Contact = () => {
 								<div aria-live="polite" aria-atomic="true">
 									{status === 'success' && (
 										<p className="mt-3 text-success">
-											Votre message a bien été envoyé. Je vous répondrai bientôt !
+											{locale === 'en' ? "Your message has been sent. I'll get back to you soon!" : 'Votre message a bien été envoyé. Je vous répondrai bientôt !'}
 										</p>
 									)}
 									{status === 'error' && (
 										<p className="mt-3 text-danger">
-											Une erreur est survenue. Veuillez réessayer ou me contacter
-											directement par email.
+											{locale === 'en' ? 'An error occurred. Please try again or contact me directly by email.' : 'Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.'}
 										</p>
 									)}
 								</div>

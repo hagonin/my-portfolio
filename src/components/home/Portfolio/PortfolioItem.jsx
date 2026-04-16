@@ -15,13 +15,14 @@ const PortfolioItem = ({ portfolio, onClick }) => (
 		<div className="item" onClick={onClick}>
 			{portfolio.Section || (
 				<>
-					<div className="full_link">
+					<div className="full_link" style={{ height: '510px', overflow: 'hidden' }}>
 						<Image
 							src={portfolio.image}
 							alt="Portfolio Item"
 							width={380}
 							height={510}
 							className="img-fluid"
+							style={{ objectFit: 'contain', width: '100%', height: '100%' }}
 						/>
 					</div>
 					<Link href="#">

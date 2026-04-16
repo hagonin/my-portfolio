@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { AnimatePresence } from 'framer-motion';
@@ -7,12 +6,14 @@ import PortfolioModal from './PortfolioModal';
 import FilterButton from './PortfolioFilterMenu';
 import { portfoliosData, menuLists } from '@/staticData/home/portfolioData';
 import Button from '@/components/ui/Button';
+import { useTranslation } from '@/hooks/use-translations';
 
 const Portfolio = () => {
 	const isMobile = useMediaQuery('(max-width: 592px)');
 	const [marginTop, setMarginTop] = useState('60px');
 	const [active, setActive] = useState('all');
 	const [modalData, setModalData] = useState({ isOpen: false, selected: null });
+	const { t, locale } = useTranslation();
 
 	useEffect(() => {
 		setMarginTop(isMobile ? '0px' : '60px');
@@ -31,11 +32,11 @@ const Portfolio = () => {
 	);
 
 	return (
-		<div className="portfolio" data-title="Portfolio" id="portfolio">
+		<div className="portfolio" data-title={locale === 'en' ? 'Portfolio' : 'Portfolio'} id="portfolio">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">
-						<span>Portfolio</span>
+						<span>{t('portfolio.title')}</span>
 					</h2>
 				</div>
 				<div className="portfolio-wrapper">
@@ -67,14 +68,14 @@ const Portfolio = () => {
 			<PortfolioModal
 				isOpen={modalData.isOpen}
 				onRequestClose={closeModal}
-				selectedImage={modalData.selected?.video}
+				selectedImage={modalData.selected?.video || modalData.selected?.image}
 				selectedPortfolio={modalData.selected}
 			/>
 
 			<div className="all-blog-button-area text-center">
 				<Button
 					arrow
-					text="Voir plus de projets sur GitHub"
+					text={t('portfolio.viewMore')}
 					onClick={() => window.open('https://github.com/hagonin', '_blank')}
 				/>
 			</div>

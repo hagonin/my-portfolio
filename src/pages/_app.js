@@ -1,4 +1,5 @@
 import BackToTop from '@/components/shared/BackToTop';
+import { LanguageProvider } from '@/context/LanguageContext';
 //external libraries
 import '../../public/assets/css/bootstrap.min.css';
 import '../../public/assets/css/bootstrap.rtl.min.css';
@@ -17,9 +18,9 @@ import '../../public/assets/css/style-rtl.css';
 
 export default function App({ Component, pageProps }) {
 	return (
-		<>
+		<LanguageProvider>
 			<Component {...pageProps} />
 			<BackToTop />
-		</>
+		</LanguageProvider>
 	);
 }

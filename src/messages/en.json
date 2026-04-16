@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "greeting": "Hello",
+    "title": "I'm",
+    "name": "Sarah",
+    "typewriter": [
+      "Full-Stack Developer",
+      "Web & Mobile Development",
+      "Application Designer & Developer"
+    ],
+    "ctaProjects": "View my projects"
+  },
+  "about": {
+    "designation": "FULL-STACK DEVELOPER",
+    "desc": [
+      "I am a web developer passionate about tech, with a sense of aesthetics and technical rigor in creating digital projects that combine performance and user experience.",
+      "After my first steps in web development at 17 and exploring programming basics in 2017, it was in 2021 that I seriously dove into coding through intensive and in-depth training.",
+      "Eager to stay up-to-date on web, development and design practices and techniques, I specialize in creating solutions that meet real user needs.",
+      "I am open and motivated to collaborate and participate in innovative and impactful projects in the new technologies sector."
+    ],
+    "downloadCv": "DOWNLOAD CV"
+  },
+  "funFacts": [
+    { "title": "YEARS OF EXPERIENCE" },
+    { "title": "HIGHER EDUCATION DEGREES" },
+    { "title": "CODE POLYGLOT" },
+    { "title": "HACKATHON AWARD FOR BEST UX/UI" }
+  ],
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical skills"
+  },
+  "resume": {
+    "title": "Resume",
+    "experience": "EXPERIENCE",
+    "education": "EDUCATION"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "My recent projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "viewMore": "View more projects on GitHub",
+    "problem": "Problem",
+    "solution": "Solution",
+    "results": "Results",
+    "description": "Description",
+    "sourceCode": "Source Code",
+    "visitSite": "Visit Site",
+    "projects": {
+      "airsen": {
+        "description": "Full-stack air quality monitoring application with interactive map of 35k+ French municipalities, customizable alert system and community forum."
+      },
+      "imin": {
+        "description": "Social network mobile app developed at Do&Go. Redesigned the full UI/UX from scratch and implemented it in Flutter. Contributed to Node.js backend testing, missing endpoint coverage and benchmarking infrastructure with AdminJS integration."
+      },
+      "homecook": {
+        "description": "A recipe management web application enabling creation, storage and search by categories and ingredients, with user authentication for account and recipe management."
+      },
+      "freshmeals": {
+        "description": "A responsive e-commerce site allowing users to browse organic products, select items to purchase, add them to cart, create an account and log in."
+      },
+      "healthyfood": {
+        "description": "This project is a replica of the Slimming World website, created as a training project."
+      }
+    }
+  },
+  "contact": {
+    "title": "PHONE NUMBER",
+    "emailTitle": "EMAIL ADDRESS",
+    "locationTitle": "LOCATION",
+    "websiteTitle": "WEBSITE",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formMessage": "Your Message",
+    "formSend": "Send",
+    "formSending": "Sending...",
+    "formSuccess": "Message sent successfully!",
+    "formError": "Error sending message. Please try again."
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "resume": "RESUME",
+    "portfolio": "PORTFOLIO",
+    "contact": "Contact me"
+  },
+  "footer": {
+    "githubTooltip": "Follow me on Github",
+    "linkedinTooltip": "Follow me on Linkedin"
+  }
+}

@@ -1,9 +1,18 @@
 import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "@/hooks/use-translations";
+
+const menuTranslationKeys = {
+  1: 'nav.home',
+  2: 'nav.about',
+  3: 'nav.resume',
+  4: 'nav.portfolio'
+};
 
 const Header = ({ activeMenuItem }) => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   let pathSegments = "";
   let firstSegment = "";
@@ -47,7 +56,7 @@ const Header = ({ activeMenuItem }) => {
                 data-section={menu.selector}
               >
                 {menu?.Icon}
-                {menu?.title}
+                {menuTranslationKeys[menu?.id] ? t(menuTranslationKeys[menu?.id]) : menu?.title}
               </Link>
             </li>
           ))}
@@ -59,7 +68,7 @@ const Header = ({ activeMenuItem }) => {
           href={isHomepage ? siteSettings?.headerBottom?.url : "/#contact"}
           className="stretched-link"
         >
-          {siteSettings?.headerBottom?.title}
+          {t('nav.contact')}
         </Link>
       </div>
     </header>

@@ -15,22 +15,19 @@ const CustomModal = ({
   const customStyles = {
     content: {
       position: "absolute",
-      top: "50%",
+      top: "5%",
       left: "50%",
-      transform: "translate(-50%, -50%)",
+      transform: "translateX(-50%)",
       backgroundColor: containsImageExtension ? "transparent" : "white",
-      // padding: '20px',
       borderRadius: "3px",
-      maxWidth: containsImageExtension ? "100%" : "100%",
-      // maxHeight: '80%',
-      height: "62%",
-      width:
-        (containsImageExtension || (isMobile && !containsImageExtension)) ?
-        "80%" : "70%",
-      overflow: "hidden",
+      maxWidth: "900px",
+      maxHeight: "80vh",
+      width: isMobile ? "95%" : "75%",
+      height: "fit-content",
+      overflow: "auto",
       border: "none",
       padding: 0,
-      //width: "70%",
+      marginBottom: "5%",
     },
     overlay: {
       position: "fixed",
