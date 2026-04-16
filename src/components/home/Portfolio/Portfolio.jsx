@@ -68,7 +68,7 @@ const Portfolio = () => {
 			<PortfolioModal
 				isOpen={modalData.isOpen}
 				onRequestClose={closeModal}
-				selectedImage={modalData.selected?.video}
+				selectedImage={modalData.selected?.video || modalData.selected?.image}
 				selectedPortfolio={modalData.selected}
 			/>
 

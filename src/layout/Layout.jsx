@@ -1,6 +1,7 @@
 import Footer from "@/layout/Footer";
 import MainHeader from "@/layout/Header/MainHeader";
 import NextHead from "@/components/shared/NextHead";
+import LanguageToggle from "@/components/i18n/LanguageToggle";
 import { useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -11,6 +12,7 @@ const Layout = ({ className = "", children }) => {
   return (
     <>
       <NextHead />
+      <LanguageToggle />
       <a href="#main-content" className="skip-link">
         {locale === 'fr' ? 'Aller au contenu principal' : 'Skip to main content'}
       </a>

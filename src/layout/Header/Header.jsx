@@ -1,7 +1,6 @@
 import { siteSettings } from "@/staticData/siteSettings";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import LanguageToggle from "@/components/i18n/LanguageToggle";
 import { useTranslation } from "@/hooks/use-translations";
 
 const menuTranslationKeys = {
@@ -63,8 +62,6 @@ const Header = ({ activeMenuItem }) => {
           ))}
         </ul>
       </div>
-
-      <LanguageToggle />
 
       <div className="contact-btn">
         <Link
