@@ -29,6 +29,16 @@ export const skillsData = {
       ]
     },
     {
+      id: 'ai',
+      name: { fr: 'IA & Agentique', en: 'AI & Agentic' },
+      skills: [
+        { name: 'Claude Code', icon: 'claude.svg', level: 'advanced', years: 2 },
+        { name: 'Codex', icon: 'codex.svg', level: 'advanced', years: 1 },
+        { name: 'Antigravity', icon: 'antigravity.svg', level: 'intermediate', years: 1 },
+        { name: 'ChatGPT', icon: 'chatgpt.svg', level: 'advanced', years: 3 },
+      ]
+    },
+    {
       id: 'database',
       name: { fr: 'Base de données', en: 'Database' },
       skills: [

@@ -92,12 +92,37 @@ export const experienceData = [
       fr: [
         "Développement et validation de l'API (Node.js) avec mise en place de tests automatisés (98,2% de réussite) et intégration de cache Redis en production",
         'Conception et développement du dashboard Middle Office avec visualisations de données (React.js)',
-        "Refonte complète de l'interface mobile (Figma → Flutter) avec implémentation des modes light et dark"
+        "Refonte complète de l'interface mobile (Figma → Flutter) avec implémentation des modes light et dark",
+        "Utilisation quotidienne d'outils d'IA agentique (Claude Code, Codex) pour accélérer le développement et la revue de code"
       ],
       en: [
         'API development and validation (Node.js) with automated testing implementation (98.2% success rate) and Redis cache integration in production',
         'Design and development of Middle Office dashboard with data visualizations (React.js)',
-        'Complete mobile interface redesign (Figma → Flutter) with light and dark mode implementation'
+        'Complete mobile interface redesign (Figma → Flutter) with light and dark mode implementation',
+        'Daily use of agentic AI tools (Claude Code, Codex) to accelerate development and code review'
+      ]
+    }
+  },
+  {
+    id: 4,
+    range: {
+      fr: '2022 - Présent',
+      en: '2022 - Present'
+    },
+    title: {
+      fr: 'Développeuse Web/Mobile - Freelance',
+      en: 'Freelance Web/Mobile Developer'
+    },
+    desc: {
+      fr: [
+        "Conception et développement d'applications web et mobiles responsives pour des clients, en mode projet",
+        'Réalisation de projets full-stack avec React, Next.js, Django et Firebase (e-commerce, plateformes de données, applications métier)',
+        "Du design à la mise en production : intégration pixel-perfect (Figma), API REST, authentification sécurisée et déploiement"
+      ],
+      en: [
+        'Designed and built responsive web and mobile applications for clients on a project basis',
+        'Delivered full-stack projects with React, Next.js, Django and Firebase (e-commerce, data platforms, business apps)',
+        'From design to production: pixel-perfect integration (Figma), REST APIs, secure authentication and deployment'
       ]
     }
   },
