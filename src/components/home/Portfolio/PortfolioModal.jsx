@@ -141,7 +141,8 @@ const PortfolioModal = ({
 
 	if (!selectedPortfolio) return null;
 
-	const ProjectInfo = ({ centered = false }) => (
+	// Render function (not a component) to avoid remounting on every parent render.
+	const renderProjectInfo = (centered = false) => (
 		<div className="mb-3">
 			<h4 className={`mb-3 fw-bolder ${centered ? 'text-center' : ''}`}>{selectedPortfolio.name}</h4>
 			<ul className={`mb-3 ${centered ? 'text-center' : ''}`}>
@@ -169,7 +170,7 @@ const PortfolioModal = ({
 			{selectedImage && !isVideo && (
 				<div className="p-4 overflow-auto">
 					<div className="bg-white p-4">
-						<ProjectInfo />
+						{renderProjectInfo()}
 						<div className="d-flex align-items-center justify-content-center gap-3">
 							{hasMultipleImages && (
 								<button
@@ -228,7 +229,7 @@ const PortfolioModal = ({
 					</div>
 					{/* Info below — centered */}
 					<div className="pt-3 w-100">
-						<ProjectInfo centered />
+						{renderProjectInfo(true)}
 					</div>
 					<button className="mfp-close" onClick={onRequestClose} style={{ position: 'absolute' }}>
 						&times;
