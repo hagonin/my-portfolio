@@ -10,7 +10,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useTranslation } from "@/hooks/use-translations";
 
 const Hero = () => {
-	const { t } = useTranslation();
+	const { t, locale } = useTranslation();
 
     return (
 			<div className="hero-banner" id="home">
@@ -33,7 +33,7 @@ const Hero = () => {
 						</div>
 						<ul className="buttons">
 							<li>
-								<Button arrow onClick={downloadPdf} text={t('about.downloadCv')} />
+								<Button arrow onClick={() => downloadPdf(locale)} text={t('about.downloadCv')} />
 							</li>
 						</ul>
 						<div className="hero-img">
