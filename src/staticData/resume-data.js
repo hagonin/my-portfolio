@@ -11,8 +11,8 @@ export const educationData = [
       en: 'APPLICATION DESIGNER & DEVELOPER - Bachelor+4 Equiv.'
     },
     description: {
-      fr: "Maîtrise du développement d'applications web et mobiles en Java, JavaScript, Angular et Spring. Conception d'architectures logicielles robustes, analyse des besoins et modélisation UML. Gestion de bases de données SQL et NoSQL, déploiement, tests unitaires et rédaction de documentation technique. Application des méthodes Agile et DevOps, veille sécurité et utilisation d'outils collaboratifs comme Git.",
-      en: 'Mastery of web and mobile application development in Java, JavaScript, Angular and Spring. Design of robust software architectures, requirements analysis and UML modeling. SQL and NoSQL database management, deployment, unit testing and technical documentation. Application of Agile and DevOps methods, security monitoring and use of collaborative tools like Git.'
+      fr: "Développement d'applications web et mobiles en Java, JavaScript, Angular et Spring. Analyse des besoins, modélisation UML et conception d'architectures logicielles. Bases de données SQL et NoSQL, tests unitaires, déploiement et documentation technique. Travail en Agile et DevOps, avec Git au quotidien et une vraie attention portée à la sécurité.",
+      en: "Building web and mobile applications in Java, JavaScript, Angular and Spring. Requirements analysis, UML modeling and software architecture design. SQL and NoSQL databases, unit testing, deployment and technical documentation. Working in Agile and DevOps, with Git day to day and real attention paid to security."
     }
   },
   {
@@ -26,8 +26,8 @@ export const educationData = [
       en: 'FRONT-END DEVELOPER BOOTCAMP - Bachelor+2 Equiv.'
     },
     description: {
-      fr: 'Maîtriser HTML, CSS, JavaScript, les algorithmes fondamentaux, et React pour créer des interfaces web dynamiques, responsives et optimisées',
-      en: 'Master HTML, CSS, JavaScript, fundamental algorithms, and React to create dynamic, responsive and optimized web interfaces'
+      fr: 'HTML, CSS, JavaScript, les bases des algorithmes et React, pour construire des interfaces web dynamiques et responsives.',
+      en: 'HTML, CSS, JavaScript, algorithm basics and React, to build dynamic and responsive web interfaces.'
     }
   },
   {
@@ -41,8 +41,8 @@ export const educationData = [
       en: 'PYTHON AND WEB DEVELOPMENT WITH DJANGO'
     },
     description: {
-      fr: "Maîtriser les bases de Python, le développement web avec Django, la gestion des bases de données SQL, la création d'interfaces dynamiques et le déploiement d'applications sécurisées",
-      en: 'Master Python basics, web development with Django, SQL database management, dynamic interface creation and secure application deployment'
+      fr: "Bases de Python et développement web avec Django : gestion de bases SQL, interfaces dynamiques et déploiement d'applications sécurisées.",
+      en: 'Python basics and web development with Django: SQL database management, dynamic interfaces and secure application deployment.'
     }
   },
   {
@@ -56,8 +56,8 @@ export const educationData = [
       en: 'MASTER IN SPORTS TOURISM SERVICES MANAGEMENT - Master Degree'
     },
     description: {
-      fr: 'Développer des compétences en gestion et promotion du tourisme sportif, apprendre à organiser des événements sportifs, et maîtriser les stratégies de communication pour valoriser les services liés au sport et au tourisme',
-      en: 'Develop skills in sports tourism management and promotion, learn to organize sporting events, and master communication strategies to promote sports and tourism services'
+      fr: "Gestion et promotion du tourisme sportif, organisation d'événements et communication autour des services liés au sport et au tourisme.",
+      en: 'Sports tourism management and promotion, event organization, and communication around sports and tourism services.'
     }
   },
   {
@@ -71,8 +71,8 @@ export const educationData = [
       en: 'BACHELOR IN ENGLISH TRANSLATION & INTERPRETATION - Bachelor Degree'
     },
     description: {
-      fr: 'Acquérir les compétences pour traduire, interpréter et adapter le contenu à divers contextes culturels et professionnels.',
-      en: 'Acquire skills to translate, interpret and adapt content to various cultural and professional contexts.'
+      fr: 'Traduire, interpréter et adapter des contenus à différents contextes culturels et professionnels.',
+      en: 'Translating, interpreting and adapting content for different cultural and professional contexts.'
     }
   }
 ];

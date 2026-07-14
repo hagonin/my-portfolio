@@ -34,6 +34,11 @@ const AboutMe = () => {
 							<h4 className="designation">
 								{t('about.designation')} <span className="line"></span>
 							</h4>
+							<p className="signature-tagline">
+								<span className="sig-serif">{t('about.signatureDesigner')}</span>
+								<span className="sig-amp">&amp;&amp;</span>
+								<span className="sig-mono">{t('about.signatureDev')}</span>
+							</p>
 							<div className="bio">
 								{Array.isArray(aboutDesc) && aboutDesc.map((text, index) => (
 									<p key={index} className="mb-3">

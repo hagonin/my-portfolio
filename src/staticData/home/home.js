@@ -1,5 +1,4 @@
 
-import PhoneNumber from '@/components/icons/home/PhoneNumber';
 import EmailIcon from '@/components/icons/home/EmailIcon';
 import LocationIcon from '@/components/icons/home/LocationIcon';
 import WebsiteIcon from '@/components/icons/home/WebsiteIcon';
@@ -61,14 +60,8 @@ export const aboutMe = {
 		},
 		{
 			id: 2,
-			title: '+33 6 72 17 92 99',
-			Icon: (
-				<PhoneNumber
-					viewBox="0 0 32 31"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				/>
-			),
+			title: 'Hô Chi Minh, Vietnam',
+			Icon: <LocationIcon viewBox="0 0 18 24" />,
 			link: '',
 		},
 		{
@@ -247,9 +240,10 @@ export const expSecondCol = [
 export const contactInfo = [
 	{
 		id: 1,
-		Icon: <PhoneNumber />,
-		title: 'NUMÉRO TÉLÉPHONE',
-		data1: '+33 6 72 17 92 99',
+		Icon: <LocationIcon />,
+		title: 'LOCALISATION',
+		data1: 'Hô Chi Minh',
+		data2: 'Vietnam',
 	},
 	{
 		id: 2,

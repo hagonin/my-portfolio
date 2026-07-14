@@ -11,13 +11,15 @@
     "ctaProjects": "Voir mes projets"
   },
   "about": {
-    "designation": "DÉVÉLOPPEUSE FULL-STACK",
+    "designation": "DÉVELOPPEUSE FULL-STACK",
+    "signatureDesigner": "L'œil du designer",
+    "signatureDev": "la_rigueur_du_dev()",
     "desc": [
-      "Je suis une développeuse web passionnée par la tech, avec un sens de l'esthétique et une rigueur technique dans la création de projets numériques qui allient performance et expérience utilisateur.",
-      "Après mes premiers pas dans le développement web à 17 ans et l'exploration des bases de la programmation en 2017, c'est en 2021 que j'ai plongé sérieusement dans le code à travers des formations intensives et approfondies.",
-      "Avide de rester à jour sur les pratiques et techniques du web, du développement et du design, je suis spécialisée dans la création de solutions répondant aux besoins réels des utilisateurs.",
-      "J'intègre l'IA agentique au quotidien dans mes projets (Claude Code, Codex, Antigravity) pour accélérer le développement, du prototypage au refactoring, tout en gardant la maîtrise de la qualité et de l'architecture du code.",
-      "Je suis ouverte et motivée pour collaborer et participer à des projets innovants et percutants dans le secteur des nouvelles technologies."
+      "Je conçois des interfaces et des applications web où le soin visuel compte autant que ce qui se passe sous le capot. Le détail qui rend une page agréable à utiliser m'intéresse autant que le code qui la fait tourner.",
+      "J'ai touché au développement web pour la première fois à 17 ans, en 2017, en bricolant mes premières pages. Mais c'est en 2021 que je m'y suis mise sérieusement, avec des formations intensives et des projets menés jusqu'au bout. C'est là que ma passion est devenue un vrai choix de carrière.",
+      "Depuis, j'apprends en continu, côté dev comme côté design, parce que le métier bouge vite et que c'est une partie du plaisir. Ce qui me guide, c'est de construire des solutions qui servent vraiment ceux qui les utilisent, avec un code propre et une interface soignée.",
+      "Au quotidien, je travaille avec des outils d'IA agentique (Claude Code, Codex, Antigravity) pour aller plus vite, du prototype au refactoring, sans jamais lâcher la main sur la qualité et l'architecture du code.",
+      "Je cherche à collaborer sur des projets qui ont du sens et de l'ambition. Si c'est le vôtre, écrivez-moi."
     ],
     "downloadCv": "TÉLÉCHARGER CV"
   },
