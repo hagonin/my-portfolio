@@ -78,7 +78,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="contact" data-title={locale === 'en' ? 'Contact' : 'Contacte'} id="contact">
+		<div className="contact" data-title="Contact" id="contact">
 			<div className="container">
 				<div className="section-title">
 					<h2 className="title">

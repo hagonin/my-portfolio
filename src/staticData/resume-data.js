@@ -129,7 +129,7 @@ export const experienceData = [
   {
     id: 2,
     range: {
-      fr: 'Mar 2023 - Juin 2023',
+      fr: 'Mars 2023 - Juin 2023',
       en: 'Mar 2023 - June 2023'
     },
     title: {
